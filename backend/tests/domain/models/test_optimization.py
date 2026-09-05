@@ -51,7 +51,7 @@ def test_optimization_result_valid():
             r_id1: {"cost": 0.5, "time": 0.15, "reliability": 0.15, "risk": 0.15}
         },
         constraint_results={r_id2: ["Too slow"]},
-        tradeoffs={"insight": "Route 1 is cheaper but slower."},
+        tradeoffs={"insight": ["Route 1 is cheaper but slower."]},
         execution_time_ms=12.5,
     )
 

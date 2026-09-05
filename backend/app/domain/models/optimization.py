@@ -49,7 +49,10 @@ class OptimizationResult(BaseModel):
     constraint_results: dict[UUID, list[str]] = Field(default_factory=dict)
 
     # Trade-offs and Pareto dominance details
-    tradeoffs: dict[str, str] = Field(default_factory=dict)
+    tradeoffs: dict[str, list[str]] = Field(default_factory=dict)
+
+    # Sensitivity analysis results (if enabled)
+    sensitivity: dict | None = Field(default=None)
 
     execution_time_ms: float = Field(..., ge=0)
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
