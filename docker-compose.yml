@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  db:
+    image: postgres:15
+    container_name: safiri_db
+    environment:
+      POSTGRES_USER: safiri
+      POSTGRES_PASSWORD: safiripassword
+      POSTGRES_DB: safiri_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - safiri_data:/var/lib/postgresql/data
+
+volumes:
+  safiri_data:

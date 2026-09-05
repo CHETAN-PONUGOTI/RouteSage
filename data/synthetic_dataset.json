@@ -1,0 +1,5040 @@
+{
+  "shipments": [
+    {
+      "id": "41dd27af-6a48-57f1-ad1a-f6fd1ffaad7a",
+      "origin": "Singapore",
+      "destination": "Shanghai",
+      "cargo_type": "HAZARDOUS",
+      "weight": 11238.22,
+      "shipment_value": 737788.86,
+      "delivery_deadline": "2025-02-11T00:00:00Z",
+      "priority": "STANDARD",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "d193988c-918e-5870-8ff8-e78af9131903",
+      "origin": "Singapore",
+      "destination": "Dubai",
+      "cargo_type": "GENERAL",
+      "weight": 4775.39,
+      "shipment_value": 236497.59,
+      "delivery_deadline": "2025-02-15T00:00:00Z",
+      "priority": "STANDARD",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "f602132c-7572-57c0-a1ec-2548545743ab",
+      "origin": "Shanghai",
+      "destination": "Shenzhen",
+      "cargo_type": "PERISHABLE",
+      "weight": 32529.23,
+      "shipment_value": 547216.77,
+      "delivery_deadline": "2025-01-22T00:00:00Z",
+      "priority": "URGENT",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "5105869c-7cb1-567a-b47c-375923e3764d",
+      "origin": "Antwerp",
+      "destination": "New York",
+      "cargo_type": "GENERAL",
+      "weight": 34937.16,
+      "shipment_value": 343549.26,
+      "delivery_deadline": "2025-01-17T00:00:00Z",
+      "priority": "STANDARD",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "c7b526b4-6a1d-5c80-87bc-20b8ef64a63f",
+      "origin": "Los Angeles",
+      "destination": "Hamburg",
+      "cargo_type": "GENERAL",
+      "weight": 19058.37,
+      "shipment_value": 362184.48,
+      "delivery_deadline": "2025-01-30T00:00:00Z",
+      "priority": "STANDARD",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "12c07535-7a43-5c95-830e-d4b00fe35ec3",
+      "origin": "Busan",
+      "destination": "New York",
+      "cargo_type": "GENERAL",
+      "weight": 23025.3,
+      "shipment_value": 129202.03,
+      "delivery_deadline": "2025-02-01T00:00:00Z",
+      "priority": "URGENT",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "6ed3d782-7c33-5db5-b44c-16cb1e7acad3",
+      "origin": "Singapore",
+      "destination": "Shenzhen",
+      "cargo_type": "HAZARDOUS",
+      "weight": 30964.14,
+      "shipment_value": 862398.37,
+      "delivery_deadline": "2025-02-13T00:00:00Z",
+      "priority": "URGENT",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "ff5895c9-764d-578e-bec9-4fdcbe9928d0",
+      "origin": "Los Angeles",
+      "destination": "Singapore",
+      "cargo_type": "GENERAL",
+      "weight": 11472.12,
+      "shipment_value": 292941.02,
+      "delivery_deadline": "2025-01-13T00:00:00Z",
+      "priority": "URGENT",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "e087c7eb-5bac-5957-94d0-5ebc3d7b8ba8",
+      "origin": "Los Angeles",
+      "destination": "Singapore",
+      "cargo_type": "FRAGILE",
+      "weight": 22725.17,
+      "shipment_value": 834939.87,
+      "delivery_deadline": "2025-01-18T00:00:00Z",
+      "priority": "HIGH",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "87bb46e5-19f6-5c1d-915d-04f2c0648d7f",
+      "origin": "Hamburg",
+      "destination": "Busan",
+      "cargo_type": "PERISHABLE",
+      "weight": 13422.19,
+      "shipment_value": 936971.31,
+      "delivery_deadline": "2025-01-12T00:00:00Z",
+      "priority": "URGENT",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "0167faf0-a5f9-56be-a557-6ddb64fc2b47",
+      "origin": "Busan",
+      "destination": "Rotterdam",
+      "cargo_type": "PERISHABLE",
+      "weight": 23166.78,
+      "shipment_value": 273598.09,
+      "delivery_deadline": "2025-02-12T00:00:00Z",
+      "priority": "STANDARD",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "ca71cda0-a988-56c7-857a-102ec0a40809",
+      "origin": "Los Angeles",
+      "destination": "Hamburg",
+      "cargo_type": "GENERAL",
+      "weight": 41107.95,
+      "shipment_value": 806020.57,
+      "delivery_deadline": "2025-02-02T00:00:00Z",
+      "priority": "STANDARD",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "bc7f5e0d-a578-5672-a069-165f1209fc88",
+      "origin": "New York",
+      "destination": "Singapore",
+      "cargo_type": "PERISHABLE",
+      "weight": 43830.74,
+      "shipment_value": 318104.49,
+      "delivery_deadline": "2025-02-08T00:00:00Z",
+      "priority": "URGENT",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "b71eb350-5c31-5f56-b732-c213af01eac4",
+      "origin": "Dubai",
+      "destination": "Antwerp",
+      "cargo_type": "PERISHABLE",
+      "weight": 7067.55,
+      "shipment_value": 746264.04,
+      "delivery_deadline": "2025-02-11T00:00:00Z",
+      "priority": "HIGH",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "15efba69-3edb-5348-8a06-21c1daf7b4fd",
+      "origin": "New York",
+      "destination": "Dubai",
+      "cargo_type": "FRAGILE",
+      "weight": 11044.11,
+      "shipment_value": 997549.92,
+      "delivery_deadline": "2025-02-09T00:00:00Z",
+      "priority": "HIGH",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "dfec856d-9954-5059-9c1f-1c4d02e5e8a1",
+      "origin": "Antwerp",
+      "destination": "Singapore",
+      "cargo_type": "GENERAL",
+      "weight": 7726.78,
+      "shipment_value": 164182.09,
+      "delivery_deadline": "2025-02-04T00:00:00Z",
+      "priority": "STANDARD",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "41c17b9f-7dc1-5320-9bd5-838b2a8d76fa",
+      "origin": "Busan",
+      "destination": "Singapore",
+      "cargo_type": "FRAGILE",
+      "weight": 29834.83,
+      "shipment_value": 470709.64,
+      "delivery_deadline": "2025-01-24T00:00:00Z",
+      "priority": "HIGH",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "04dc3b2a-cbc7-5aab-b933-64e73ec5c5d6",
+      "origin": "Shenzhen",
+      "destination": "Shanghai",
+      "cargo_type": "GENERAL",
+      "weight": 44250.94,
+      "shipment_value": 752123.41,
+      "delivery_deadline": "2025-01-29T00:00:00Z",
+      "priority": "URGENT",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "b9a5e104-5147-5d36-802c-e7fd1aeaac38",
+      "origin": "Singapore",
+      "destination": "New York",
+      "cargo_type": "FRAGILE",
+      "weight": 22740.81,
+      "shipment_value": 954046.85,
+      "delivery_deadline": "2025-01-24T00:00:00Z",
+      "priority": "STANDARD",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "58107fa1-63ee-5bc9-bdeb-f26e6b4d888b",
+      "origin": "Shenzhen",
+      "destination": "Rotterdam",
+      "cargo_type": "GENERAL",
+      "weight": 14992.4,
+      "shipment_value": 640754.75,
+      "delivery_deadline": "2025-02-15T00:00:00Z",
+      "priority": "URGENT",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "78df42aa-ea31-5e9c-8da1-4437485e8376",
+      "origin": "Los Angeles",
+      "destination": "Rotterdam",
+      "cargo_type": "HAZARDOUS",
+      "weight": 27015.01,
+      "shipment_value": 779733.35,
+      "delivery_deadline": "2025-02-10T00:00:00Z",
+      "priority": "STANDARD",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "063dfbec-2652-5a02-b8f8-ed0a0fe1f2f0",
+      "origin": "Shanghai",
+      "destination": "Hamburg",
+      "cargo_type": "FRAGILE",
+      "weight": 5682.2,
+      "shipment_value": 366165.86,
+      "delivery_deadline": "2025-01-27T00:00:00Z",
+      "priority": "STANDARD",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "e64c09de-c858-5a3e-bbe3-123f5872ec37",
+      "origin": "Los Angeles",
+      "destination": "Shanghai",
+      "cargo_type": "PERISHABLE",
+      "weight": 47352.78,
+      "shipment_value": 90225.18,
+      "delivery_deadline": "2025-02-08T00:00:00Z",
+      "priority": "URGENT",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "060b37c0-7d51-5511-9691-04b3844adaa1",
+      "origin": "Singapore",
+      "destination": "Shenzhen",
+      "cargo_type": "PERISHABLE",
+      "weight": 33021.57,
+      "shipment_value": 947114.44,
+      "delivery_deadline": "2025-01-18T00:00:00Z",
+      "priority": "STANDARD",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "881182a4-af53-5085-b037-4840f40c1999",
+      "origin": "New York",
+      "destination": "Shenzhen",
+      "cargo_type": "FRAGILE",
+      "weight": 46452.78,
+      "shipment_value": 756488.87,
+      "delivery_deadline": "2025-01-20T00:00:00Z",
+      "priority": "STANDARD",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "9bec8eb3-6eee-516e-9122-a346728c2b0a",
+      "origin": "New York",
+      "destination": "Dubai",
+      "cargo_type": "HAZARDOUS",
+      "weight": 44990.74,
+      "shipment_value": 454228.71,
+      "delivery_deadline": "2025-01-23T00:00:00Z",
+      "priority": "HIGH",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "514f81cc-b026-5375-8ee1-53a3bdf8ba4b",
+      "origin": "Los Angeles",
+      "destination": "Singapore",
+      "cargo_type": "HAZARDOUS",
+      "weight": 29456.61,
+      "shipment_value": 233964.16,
+      "delivery_deadline": "2025-01-22T00:00:00Z",
+      "priority": "STANDARD",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "839779cc-317b-5e37-9b91-2d3066df7ee2",
+      "origin": "Shanghai",
+      "destination": "Singapore",
+      "cargo_type": "GENERAL",
+      "weight": 3463.28,
+      "shipment_value": 36255.89,
+      "delivery_deadline": "2025-01-29T00:00:00Z",
+      "priority": "STANDARD",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "54179b8a-8257-54ee-96a2-5657240fe4ef",
+      "origin": "Singapore",
+      "destination": "Shenzhen",
+      "cargo_type": "PERISHABLE",
+      "weight": 33481.99,
+      "shipment_value": 218165.62,
+      "delivery_deadline": "2025-01-16T00:00:00Z",
+      "priority": "HIGH",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "b2322a45-c5f9-50f5-a9dd-cfa7d35db5f6",
+      "origin": "Busan",
+      "destination": "Antwerp",
+      "cargo_type": "PERISHABLE",
+      "weight": 40394.1,
+      "shipment_value": 194457.86,
+      "delivery_deadline": "2025-01-14T00:00:00Z",
+      "priority": "HIGH",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  ],
+  "routes": [
+    {
+      "id": "57dc8707-daf5-5c60-9f1e-6199945e4c23",
+      "shipment_id": "41dd27af-6a48-57f1-ad1a-f6fd1ffaad7a",
+      "route_name": "Balanced Route",
+      "total_cost": 7252.49,
+      "transit_time": 17.95,
+      "delay_probability": 0.27,
+      "reliability": 0.73,
+      "aggregate_risk": 0.21,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Shanghai",
+          "transport_mode": "ROAD",
+          "duration": 6.67,
+          "cost": 2667.12,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Shanghai",
+          "destination": "Singapore",
+          "transport_mode": "AIR",
+          "duration": 5.36,
+          "cost": 2415.41,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "Singapore",
+          "destination": "Shanghai",
+          "transport_mode": "AIR",
+          "duration": 5.92,
+          "cost": 2169.96,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "8bd8d58a-75d7-569e-9379-316f6994958a",
+      "shipment_id": "41dd27af-6a48-57f1-ad1a-f6fd1ffaad7a",
+      "route_name": "Economy Route",
+      "total_cost": 5608.41,
+      "transit_time": 28.87,
+      "delay_probability": 0.41,
+      "reliability": 0.59,
+      "aggregate_risk": 0.43,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Shanghai",
+          "transport_mode": "SEA",
+          "duration": 10.85,
+          "cost": 1836.68,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.43,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Shanghai",
+          "destination": "Rotterdam",
+          "transport_mode": "ROAD",
+          "duration": 9.2,
+          "cost": 1846.97,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.43,
+              "description": "Simulated operational risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "Rotterdam",
+          "destination": "Shanghai",
+          "transport_mode": "SEA",
+          "duration": 8.82,
+          "cost": 1924.76,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.43,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fd8fc4a5-def1-52cb-88cb-d207a7a2dd2f",
+      "shipment_id": "41dd27af-6a48-57f1-ad1a-f6fd1ffaad7a",
+      "route_name": "Express Route",
+      "total_cost": 11986.65,
+      "transit_time": 10.7,
+      "delay_probability": 0.06,
+      "reliability": 0.94,
+      "aggregate_risk": 0.1,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Shenzhen",
+          "transport_mode": "ROAD",
+          "duration": 3.11,
+          "cost": 3820.09,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Shenzhen",
+          "destination": "Shanghai",
+          "transport_mode": "SEA",
+          "duration": 3.97,
+          "cost": 3421.66,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "Shanghai",
+          "destination": "Busan",
+          "transport_mode": "ROAD",
+          "duration": 3.62,
+          "cost": 4744.9,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "802d0443-8917-5491-a68a-256a585e6237",
+      "shipment_id": "41dd27af-6a48-57f1-ad1a-f6fd1ffaad7a",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 3553.69,
+      "transit_time": 22.58,
+      "delay_probability": 0.63,
+      "reliability": 0.37,
+      "aggregate_risk": 0.75,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Los Angeles",
+          "transport_mode": "ROAD",
+          "duration": 8.78,
+          "cost": 1160.4,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.75,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Los Angeles",
+          "destination": "Busan",
+          "transport_mode": "SEA",
+          "duration": 7.22,
+          "cost": 1166.72,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.75,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "Busan",
+          "destination": "Shanghai",
+          "transport_mode": "RAIL",
+          "duration": 6.58,
+          "cost": 1226.57,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.75,
+              "description": "Simulated weather risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4bc27750-3852-530a-b8be-55a0101c1ca6",
+      "shipment_id": "d193988c-918e-5870-8ff8-e78af9131903",
+      "route_name": "Balanced Route",
+      "total_cost": 4849.98,
+      "transit_time": 16.91,
+      "delay_probability": 0.23,
+      "reliability": 0.77,
+      "aggregate_risk": 0.21,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Dubai",
+          "transport_mode": "SEA",
+          "duration": 16.91,
+          "cost": 4849.98,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "c67df1d8-74a4-54b3-84ac-82c634489552",
+      "shipment_id": "d193988c-918e-5870-8ff8-e78af9131903",
+      "route_name": "Economy Route",
+      "total_cost": 3241.82,
+      "transit_time": 23.73,
+      "delay_probability": 0.43,
+      "reliability": 0.57,
+      "aggregate_risk": 0.38,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Los Angeles",
+          "transport_mode": "RAIL",
+          "duration": 10.61,
+          "cost": 1704.88,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.38,
+              "description": "Simulated weather risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Los Angeles",
+          "destination": "Dubai",
+          "transport_mode": "RAIL",
+          "duration": 13.12,
+          "cost": 1536.94,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.38,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c21dac19-cabb-5efe-a97e-fc9ada2f5448",
+      "shipment_id": "d193988c-918e-5870-8ff8-e78af9131903",
+      "route_name": "Express Route",
+      "total_cost": 7965.3,
+      "transit_time": 9.0,
+      "delay_probability": 0.0,
+      "reliability": 1.0,
+      "aggregate_risk": 0.1,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Dubai",
+          "transport_mode": "AIR",
+          "duration": 9.0,
+          "cost": 7965.3,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "d4c760d0-69ca-546e-bd7f-d005e0d9931e",
+      "shipment_id": "d193988c-918e-5870-8ff8-e78af9131903",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 2023.57,
+      "transit_time": 20.1,
+      "delay_probability": 0.59,
+      "reliability": 0.41,
+      "aggregate_risk": 0.76,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "New York",
+          "transport_mode": "SEA",
+          "duration": 10.66,
+          "cost": 1154.27,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.76,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "New York",
+          "destination": "Dubai",
+          "transport_mode": "SEA",
+          "duration": 9.44,
+          "cost": 869.3,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.76,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0ff867a6-5e8d-517b-b891-3c9245ee5b81",
+      "shipment_id": "f602132c-7572-57c0-a1ec-2548545743ab",
+      "route_name": "Balanced Route",
+      "total_cost": 9279.54,
+      "transit_time": 14.28,
+      "delay_probability": 0.19,
+      "reliability": 0.81,
+      "aggregate_risk": 0.18,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Shanghai",
+          "destination": "Rotterdam",
+          "transport_mode": "SEA",
+          "duration": 5.21,
+          "cost": 3348.29,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Rotterdam",
+          "destination": "Dubai",
+          "transport_mode": "AIR",
+          "duration": 3.75,
+          "cost": 3065.83,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "Dubai",
+          "destination": "Shenzhen",
+          "transport_mode": "SEA",
+          "duration": 5.32,
+          "cost": 2865.42,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "56937666-b105-5935-8d61-020766b97729",
+      "shipment_id": "f602132c-7572-57c0-a1ec-2548545743ab",
+      "route_name": "Economy Route",
+      "total_cost": 7474.44,
+      "transit_time": 17.87,
+      "delay_probability": 0.37,
+      "reliability": 0.63,
+      "aggregate_risk": 0.43,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Shanghai",
+          "destination": "Busan",
+          "transport_mode": "AIR",
+          "duration": 10.47,
+          "cost": 3893.99,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.43,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Busan",
+          "destination": "Shenzhen",
+          "transport_mode": "AIR",
+          "duration": 7.4,
+          "cost": 3580.45,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.43,
+              "description": "Simulated operational risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5881e206-2fc9-519f-8837-4d31fddc01ce",
+      "shipment_id": "f602132c-7572-57c0-a1ec-2548545743ab",
+      "route_name": "Express Route",
+      "total_cost": 18492.65,
+      "transit_time": 7.45,
+      "delay_probability": 0.0,
+      "reliability": 1.0,
+      "aggregate_risk": 0.11,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Shanghai",
+          "destination": "Shenzhen",
+          "transport_mode": "RAIL",
+          "duration": 7.45,
+          "cost": 18492.65,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "6eef9593-1b2f-51a0-a411-898228051046",
+      "shipment_id": "f602132c-7572-57c0-a1ec-2548545743ab",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 4543.71,
+      "transit_time": 12.98,
+      "delay_probability": 0.6,
+      "reliability": 0.4,
+      "aggregate_risk": 0.75,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Shanghai",
+          "destination": "Hamburg",
+          "transport_mode": "RAIL",
+          "duration": 6.41,
+          "cost": 2555.56,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.75,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Hamburg",
+          "destination": "Shenzhen",
+          "transport_mode": "ROAD",
+          "duration": 6.57,
+          "cost": 1988.15,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.75,
+              "description": "Simulated weather risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cbca081c-7c85-5426-992f-1d36addd6ad0",
+      "shipment_id": "5105869c-7cb1-567a-b47c-375923e3764d",
+      "route_name": "Balanced Route",
+      "total_cost": 7418.61,
+      "transit_time": 20.29,
+      "delay_probability": 0.15,
+      "reliability": 0.85,
+      "aggregate_risk": 0.19,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Antwerp",
+          "destination": "New York",
+          "transport_mode": "SEA",
+          "duration": 20.29,
+          "cost": 7418.61,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "018f0aa6-0fcf-55bd-806c-ea8e1a1e35cc",
+      "shipment_id": "5105869c-7cb1-567a-b47c-375923e3764d",
+      "route_name": "Economy Route",
+      "total_cost": 5331.86,
+      "transit_time": 28.53,
+      "delay_probability": 0.46,
+      "reliability": 0.54,
+      "aggregate_risk": 0.41,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Antwerp",
+          "destination": "Hamburg",
+          "transport_mode": "ROAD",
+          "duration": 13.36,
+          "cost": 3000.69,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.41,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Hamburg",
+          "destination": "New York",
+          "transport_mode": "RAIL",
+          "duration": 15.17,
+          "cost": 2331.17,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.41,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "96f928ac-3500-5566-92e1-68eaf08a4481",
+      "shipment_id": "5105869c-7cb1-567a-b47c-375923e3764d",
+      "route_name": "Express Route",
+      "total_cost": 16502.67,
+      "transit_time": 10.43,
+      "delay_probability": 0.01,
+      "reliability": 0.99,
+      "aggregate_risk": 0.1,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Antwerp",
+          "destination": "Los Angeles",
+          "transport_mode": "RAIL",
+          "duration": 3.34,
+          "cost": 6287.06,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Los Angeles",
+          "destination": "Hamburg",
+          "transport_mode": "RAIL",
+          "duration": 3.65,
+          "cost": 4529.74,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "Hamburg",
+          "destination": "New York",
+          "transport_mode": "RAIL",
+          "duration": 3.44,
+          "cost": 5685.87,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "39f103e7-843c-54d1-aca8-350864889002",
+      "shipment_id": "5105869c-7cb1-567a-b47c-375923e3764d",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 4018.13,
+      "transit_time": 20.6,
+      "delay_probability": 0.6,
+      "reliability": 0.4,
+      "aggregate_risk": 0.75,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Antwerp",
+          "destination": "Dubai",
+          "transport_mode": "AIR",
+          "duration": 6.81,
+          "cost": 1492.81,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.75,
+              "description": "Simulated weather risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Dubai",
+          "destination": "New York",
+          "transport_mode": "RAIL",
+          "duration": 6.88,
+          "cost": 1359.14,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.75,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "New York",
+          "destination": "Hamburg",
+          "transport_mode": "ROAD",
+          "duration": 6.91,
+          "cost": 1166.18,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.75,
+              "description": "Simulated operational risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "609bc8de-6872-5ad1-881f-a17659f3d2db",
+      "shipment_id": "c7b526b4-6a1d-5c80-87bc-20b8ef64a63f",
+      "route_name": "Balanced Route",
+      "total_cost": 6646.91,
+      "transit_time": 22.21,
+      "delay_probability": 0.27,
+      "reliability": 0.73,
+      "aggregate_risk": 0.2,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Busan",
+          "transport_mode": "RAIL",
+          "duration": 7.31,
+          "cost": 2411.99,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Busan",
+          "destination": "Los Angeles",
+          "transport_mode": "RAIL",
+          "duration": 7.76,
+          "cost": 1796.84,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "Los Angeles",
+          "destination": "Hamburg",
+          "transport_mode": "SEA",
+          "duration": 7.14,
+          "cost": 2438.08,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "c35942f8-ced4-5f07-80a3-c564bfde0cc0",
+      "shipment_id": "c7b526b4-6a1d-5c80-87bc-20b8ef64a63f",
+      "route_name": "Economy Route",
+      "total_cost": 4624.42,
+      "transit_time": 41.45,
+      "delay_probability": 0.41,
+      "reliability": 0.59,
+      "aggregate_risk": 0.43,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Dubai",
+          "transport_mode": "ROAD",
+          "duration": 13.25,
+          "cost": 1466.13,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.43,
+              "description": "Simulated operational risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Dubai",
+          "destination": "Shanghai",
+          "transport_mode": "SEA",
+          "duration": 13.1,
+          "cost": 1547.86,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.43,
+              "description": "Simulated operational risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "Shanghai",
+          "destination": "Hamburg",
+          "transport_mode": "ROAD",
+          "duration": 15.1,
+          "cost": 1610.43,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.43,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "71cf6ef7-9c9d-5fff-a8a3-ce08e275f5ed",
+      "shipment_id": "c7b526b4-6a1d-5c80-87bc-20b8ef64a63f",
+      "route_name": "Express Route",
+      "total_cost": 10156.54,
+      "transit_time": 17.71,
+      "delay_probability": 0.06,
+      "reliability": 0.94,
+      "aggregate_risk": 0.1,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Busan",
+          "transport_mode": "RAIL",
+          "duration": 6.13,
+          "cost": 3710.76,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Busan",
+          "destination": "Shenzhen",
+          "transport_mode": "ROAD",
+          "duration": 5.88,
+          "cost": 3269.86,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "Shenzhen",
+          "destination": "Hamburg",
+          "transport_mode": "AIR",
+          "duration": 5.7,
+          "cost": 3175.92,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "0993a532-1a87-5723-814c-69a72d8b2051",
+      "shipment_id": "c7b526b4-6a1d-5c80-87bc-20b8ef64a63f",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 2917.77,
+      "transit_time": 29.77,
+      "delay_probability": 0.59,
+      "reliability": 0.41,
+      "aggregate_risk": 0.84,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Antwerp",
+          "transport_mode": "AIR",
+          "duration": 10.39,
+          "cost": 996.21,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.84,
+              "description": "Simulated weather risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Antwerp",
+          "destination": "Los Angeles",
+          "transport_mode": "RAIL",
+          "duration": 9.88,
+          "cost": 932.55,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.84,
+              "description": "Simulated weather risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "Los Angeles",
+          "destination": "Hamburg",
+          "transport_mode": "AIR",
+          "duration": 9.5,
+          "cost": 989.01,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.84,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "066d54b0-006b-5c67-b035-23ad7eb9368b",
+      "shipment_id": "12c07535-7a43-5c95-830e-d4b00fe35ec3",
+      "route_name": "Balanced Route",
+      "total_cost": 8573.87,
+      "transit_time": 12.14,
+      "delay_probability": 0.21,
+      "reliability": 0.79,
+      "aggregate_risk": 0.19,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Busan",
+          "destination": "Dubai",
+          "transport_mode": "SEA",
+          "duration": 6.5,
+          "cost": 4153.9,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Dubai",
+          "destination": "New York",
+          "transport_mode": "ROAD",
+          "duration": 5.64,
+          "cost": 4419.97,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "a92ef7ec-e847-57f3-a905-a5cdb2c50c01",
+      "shipment_id": "12c07535-7a43-5c95-830e-d4b00fe35ec3",
+      "route_name": "Economy Route",
+      "total_cost": 5630.05,
+      "transit_time": 17.23,
+      "delay_probability": 0.35,
+      "reliability": 0.65,
+      "aggregate_risk": 0.43,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Busan",
+          "destination": "Shenzhen",
+          "transport_mode": "AIR",
+          "duration": 4.9,
+          "cost": 1669.43,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.43,
+              "description": "Simulated operational risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Shenzhen",
+          "destination": "Shanghai",
+          "transport_mode": "ROAD",
+          "duration": 5.89,
+          "cost": 1917.74,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.43,
+              "description": "Simulated weather risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "Shanghai",
+          "destination": "New York",
+          "transport_mode": "AIR",
+          "duration": 6.44,
+          "cost": 2042.88,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.43,
+              "description": "Simulated operational risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12030761-3631-504c-96bf-7af2920a97a7",
+      "shipment_id": "12c07535-7a43-5c95-830e-d4b00fe35ec3",
+      "route_name": "Express Route",
+      "total_cost": 13653.99,
+      "transit_time": 6.25,
+      "delay_probability": 0.03,
+      "reliability": 0.97,
+      "aggregate_risk": 0.1,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Busan",
+          "destination": "New York",
+          "transport_mode": "ROAD",
+          "duration": 6.25,
+          "cost": 13653.99,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "693a7f4d-42bf-5fe2-8081-25a5eea8d729",
+      "shipment_id": "12c07535-7a43-5c95-830e-d4b00fe35ec3",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 3160.53,
+      "transit_time": 13.37,
+      "delay_probability": 0.62,
+      "reliability": 0.38,
+      "aggregate_risk": 0.77,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Busan",
+          "destination": "New York",
+          "transport_mode": "ROAD",
+          "duration": 7.49,
+          "cost": 1720.12,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.77,
+              "description": "Simulated weather risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "New York",
+          "destination": "Shenzhen",
+          "transport_mode": "SEA",
+          "duration": 5.88,
+          "cost": 1440.41,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.77,
+              "description": "Simulated weather risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6ef24732-a69e-5792-9d31-93756d5943f6",
+      "shipment_id": "6ed3d782-7c33-5db5-b44c-16cb1e7acad3",
+      "route_name": "Balanced Route",
+      "total_cost": 7402.39,
+      "transit_time": 10.15,
+      "delay_probability": 0.15,
+      "reliability": 0.85,
+      "aggregate_risk": 0.2,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Shenzhen",
+          "transport_mode": "AIR",
+          "duration": 10.15,
+          "cost": 7402.39,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "22be15cc-df55-5d1d-a125-dc44abff62e2",
+      "shipment_id": "6ed3d782-7c33-5db5-b44c-16cb1e7acad3",
+      "route_name": "Economy Route",
+      "total_cost": 7460.12,
+      "transit_time": 16.01,
+      "delay_probability": 0.43,
+      "reliability": 0.57,
+      "aggregate_risk": 0.39,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Busan",
+          "transport_mode": "SEA",
+          "duration": 6.36,
+          "cost": 2070.5,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.39,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Busan",
+          "destination": "Shanghai",
+          "transport_mode": "RAIL",
+          "duration": 5.14,
+          "cost": 2666.59,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.39,
+              "description": "Simulated operational risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "Shanghai",
+          "destination": "Shenzhen",
+          "transport_mode": "SEA",
+          "duration": 4.51,
+          "cost": 2723.03,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.39,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cd88ddac-1386-5b51-b1a2-24da3e3791cd",
+      "shipment_id": "6ed3d782-7c33-5db5-b44c-16cb1e7acad3",
+      "route_name": "Express Route",
+      "total_cost": 19804.78,
+      "transit_time": 6.7,
+      "delay_probability": 0.12,
+      "reliability": 0.88,
+      "aggregate_risk": 0.11,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Shenzhen",
+          "transport_mode": "RAIL",
+          "duration": 6.7,
+          "cost": 19804.78,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "420d0501-e007-5c3a-bf2b-444989c852bc",
+      "shipment_id": "6ed3d782-7c33-5db5-b44c-16cb1e7acad3",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 4643.38,
+      "transit_time": 13.81,
+      "delay_probability": 0.64,
+      "reliability": 0.36,
+      "aggregate_risk": 0.79,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Dubai",
+          "transport_mode": "RAIL",
+          "duration": 7.23,
+          "cost": 2149.48,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.79,
+              "description": "Simulated operational risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Dubai",
+          "destination": "Shenzhen",
+          "transport_mode": "RAIL",
+          "duration": 6.58,
+          "cost": 2493.9,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.79,
+              "description": "Simulated operational risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8c20cc1c-7840-5178-b6b5-839974c36228",
+      "shipment_id": "ff5895c9-764d-578e-bec9-4fdcbe9928d0",
+      "route_name": "Balanced Route",
+      "total_cost": 6021.15,
+      "transit_time": 16.15,
+      "delay_probability": 0.24,
+      "reliability": 0.76,
+      "aggregate_risk": 0.2,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Busan",
+          "transport_mode": "ROAD",
+          "duration": 8.35,
+          "cost": 3191.08,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Busan",
+          "destination": "Singapore",
+          "transport_mode": "RAIL",
+          "duration": 7.8,
+          "cost": 2830.07,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "8fa57768-034b-5221-8207-602616a35d3b",
+      "shipment_id": "ff5895c9-764d-578e-bec9-4fdcbe9928d0",
+      "route_name": "Economy Route",
+      "total_cost": 5364.78,
+      "transit_time": 22.81,
+      "delay_probability": 0.35,
+      "reliability": 0.65,
+      "aggregate_risk": 0.42,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Shenzhen",
+          "transport_mode": "SEA",
+          "duration": 9.96,
+          "cost": 2719.47,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.42,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Shenzhen",
+          "destination": "Singapore",
+          "transport_mode": "ROAD",
+          "duration": 12.85,
+          "cost": 2645.31,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.42,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cd94763d-e312-59ea-a737-87ab4bfed4f8",
+      "shipment_id": "ff5895c9-764d-578e-bec9-4fdcbe9928d0",
+      "route_name": "Express Route",
+      "total_cost": 11472.12,
+      "transit_time": 9.86,
+      "delay_probability": 0.13,
+      "reliability": 0.87,
+      "aggregate_risk": 0.09,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "New York",
+          "transport_mode": "RAIL",
+          "duration": 3.44,
+          "cost": 4086.38,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "New York",
+          "destination": "Dubai",
+          "transport_mode": "RAIL",
+          "duration": 3.28,
+          "cost": 3961.77,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "Dubai",
+          "destination": "Singapore",
+          "transport_mode": "RAIL",
+          "duration": 3.14,
+          "cost": 3423.97,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "1052fef7-771c-5fa7-bcb8-4ee01dad7651",
+      "shipment_id": "ff5895c9-764d-578e-bec9-4fdcbe9928d0",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 2879.96,
+      "transit_time": 19.97,
+      "delay_probability": 0.6,
+      "reliability": 0.4,
+      "aggregate_risk": 0.84,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Singapore",
+          "transport_mode": "AIR",
+          "duration": 19.97,
+          "cost": 2879.96,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.84,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a72f0136-df63-52c1-b941-1e30437d6fd5",
+      "shipment_id": "e087c7eb-5bac-5957-94d0-5ebc3d7b8ba8",
+      "route_name": "Balanced Route",
+      "total_cost": 6283.45,
+      "transit_time": 22.43,
+      "delay_probability": 0.15,
+      "reliability": 0.85,
+      "aggregate_risk": 0.19,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Rotterdam",
+          "transport_mode": "RAIL",
+          "duration": 11.13,
+          "cost": 3470.1,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Rotterdam",
+          "destination": "Singapore",
+          "transport_mode": "RAIL",
+          "duration": 11.3,
+          "cost": 2813.35,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "3b44979c-c01d-5a75-b250-fc9e52961989",
+      "shipment_id": "e087c7eb-5bac-5957-94d0-5ebc3d7b8ba8",
+      "route_name": "Economy Route",
+      "total_cost": 4398.92,
+      "transit_time": 40.66,
+      "delay_probability": 0.38,
+      "reliability": 0.62,
+      "aggregate_risk": 0.42,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Singapore",
+          "transport_mode": "SEA",
+          "duration": 40.66,
+          "cost": 4398.92,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.42,
+              "description": "Simulated weather risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6d0a595b-980b-506a-8f76-560e37f8b6cf",
+      "shipment_id": "e087c7eb-5bac-5957-94d0-5ebc3d7b8ba8",
+      "route_name": "Express Route",
+      "total_cost": 11675.8,
+      "transit_time": 13.72,
+      "delay_probability": 0.0,
+      "reliability": 1.0,
+      "aggregate_risk": 0.1,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Singapore",
+          "transport_mode": "ROAD",
+          "duration": 13.72,
+          "cost": 11675.8,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "abbe28ef-df8c-5082-bca8-5693c70a3792",
+      "shipment_id": "e087c7eb-5bac-5957-94d0-5ebc3d7b8ba8",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 3366.78,
+      "transit_time": 28.79,
+      "delay_probability": 0.58,
+      "reliability": 0.42,
+      "aggregate_risk": 0.87,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Singapore",
+          "transport_mode": "AIR",
+          "duration": 28.79,
+          "cost": 3366.78,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.87,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "304d6189-dce9-5283-bdbd-c5fd406a26fc",
+      "shipment_id": "87bb46e5-19f6-5c1d-915d-04f2c0648d7f",
+      "route_name": "Balanced Route",
+      "total_cost": 6188.7,
+      "transit_time": 21.4,
+      "delay_probability": 0.13,
+      "reliability": 0.87,
+      "aggregate_risk": 0.19,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Hamburg",
+          "destination": "Dubai",
+          "transport_mode": "RAIL",
+          "duration": 7.48,
+          "cost": 1961.96,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Dubai",
+          "destination": "Singapore",
+          "transport_mode": "AIR",
+          "duration": 7.64,
+          "cost": 2156.62,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "Singapore",
+          "destination": "Busan",
+          "transport_mode": "SEA",
+          "duration": 6.28,
+          "cost": 2070.12,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "3354c21b-f258-5868-b4e2-d6f0a56836b6",
+      "shipment_id": "87bb46e5-19f6-5c1d-915d-04f2c0648d7f",
+      "route_name": "Economy Route",
+      "total_cost": 4879.21,
+      "transit_time": 32.6,
+      "delay_probability": 0.41,
+      "reliability": 0.59,
+      "aggregate_risk": 0.41,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Hamburg",
+          "destination": "Shanghai",
+          "transport_mode": "AIR",
+          "duration": 16.36,
+          "cost": 2343.82,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.41,
+              "description": "Simulated weather risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Shanghai",
+          "destination": "Busan",
+          "transport_mode": "ROAD",
+          "duration": 16.24,
+          "cost": 2535.39,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.41,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1b433583-0838-5856-922f-3d551bcdd83b",
+      "shipment_id": "87bb46e5-19f6-5c1d-915d-04f2c0648d7f",
+      "route_name": "Express Route",
+      "total_cost": 13077.19,
+      "transit_time": 12.98,
+      "delay_probability": 0.02,
+      "reliability": 0.98,
+      "aggregate_risk": 0.11,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Hamburg",
+          "destination": "Singapore",
+          "transport_mode": "AIR",
+          "duration": 7.28,
+          "cost": 7495.34,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Singapore",
+          "destination": "Busan",
+          "transport_mode": "AIR",
+          "duration": 5.7,
+          "cost": 5581.85,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "d61b1305-32a0-5c93-9494-4dd0e5fc50ca",
+      "shipment_id": "87bb46e5-19f6-5c1d-915d-04f2c0648d7f",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 3830.52,
+      "transit_time": 30.43,
+      "delay_probability": 0.59,
+      "reliability": 0.41,
+      "aggregate_risk": 0.77,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Hamburg",
+          "destination": "Busan",
+          "transport_mode": "ROAD",
+          "duration": 30.43,
+          "cost": 3830.52,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.77,
+              "description": "Simulated weather risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "146bf0ee-06e8-5383-8afd-6cf13056fea4",
+      "shipment_id": "0167faf0-a5f9-56be-a557-6ddb64fc2b47",
+      "route_name": "Balanced Route",
+      "total_cost": 5881.22,
+      "transit_time": 18.87,
+      "delay_probability": 0.21,
+      "reliability": 0.79,
+      "aggregate_risk": 0.19,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Busan",
+          "destination": "Shanghai",
+          "transport_mode": "SEA",
+          "duration": 8.04,
+          "cost": 2941.72,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Shanghai",
+          "destination": "Rotterdam",
+          "transport_mode": "SEA",
+          "duration": 10.83,
+          "cost": 2939.5,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "ab15f252-3498-5d9b-8125-e18323ce95f9",
+      "shipment_id": "0167faf0-a5f9-56be-a557-6ddb64fc2b47",
+      "route_name": "Economy Route",
+      "total_cost": 3982.52,
+      "transit_time": 27.92,
+      "delay_probability": 0.37,
+      "reliability": 0.63,
+      "aggregate_risk": 0.4,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Busan",
+          "destination": "Antwerp",
+          "transport_mode": "RAIL",
+          "duration": 10.82,
+          "cost": 1302.03,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.4,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Antwerp",
+          "destination": "Singapore",
+          "transport_mode": "ROAD",
+          "duration": 8.69,
+          "cost": 1240.66,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.4,
+              "description": "Simulated weather risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "Singapore",
+          "destination": "Rotterdam",
+          "transport_mode": "SEA",
+          "duration": 8.41,
+          "cost": 1439.83,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.4,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a090a0d9-f211-533d-8463-7349180feb0a",
+      "shipment_id": "0167faf0-a5f9-56be-a557-6ddb64fc2b47",
+      "route_name": "Express Route",
+      "total_cost": 10226.63,
+      "transit_time": 13.29,
+      "delay_probability": 0.0,
+      "reliability": 1.0,
+      "aggregate_risk": 0.1,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Busan",
+          "destination": "Singapore",
+          "transport_mode": "RAIL",
+          "duration": 5.85,
+          "cost": 4379.56,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Singapore",
+          "destination": "Rotterdam",
+          "transport_mode": "ROAD",
+          "duration": 7.44,
+          "cost": 5847.07,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "31384126-67af-56d8-9fed-6404429c41bc",
+      "shipment_id": "0167faf0-a5f9-56be-a557-6ddb64fc2b47",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 2706.24,
+      "transit_time": 27.91,
+      "delay_probability": 0.6,
+      "reliability": 0.4,
+      "aggregate_risk": 0.73,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Busan",
+          "destination": "Hamburg",
+          "transport_mode": "ROAD",
+          "duration": 9.43,
+          "cost": 793.98,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.73,
+              "description": "Simulated operational risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Hamburg",
+          "destination": "Shenzhen",
+          "transport_mode": "AIR",
+          "duration": 8.33,
+          "cost": 972.23,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.73,
+              "description": "Simulated weather risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "Shenzhen",
+          "destination": "Rotterdam",
+          "transport_mode": "SEA",
+          "duration": 10.15,
+          "cost": 940.03,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.73,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e156b16d-4721-5ecf-ab63-6903e8373e93",
+      "shipment_id": "ca71cda0-a988-56c7-857a-102ec0a40809",
+      "route_name": "Balanced Route",
+      "total_cost": 4187.81,
+      "transit_time": 15.68,
+      "delay_probability": 0.27,
+      "reliability": 0.73,
+      "aggregate_risk": 0.22,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Hamburg",
+          "transport_mode": "ROAD",
+          "duration": 15.68,
+          "cost": 4187.81,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "ea304861-bc7d-5dd2-a97a-6a9e4a5e2fcc",
+      "shipment_id": "ca71cda0-a988-56c7-857a-102ec0a40809",
+      "route_name": "Economy Route",
+      "total_cost": 2255.05,
+      "transit_time": 22.83,
+      "delay_probability": 0.42,
+      "reliability": 0.58,
+      "aggregate_risk": 0.42,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Antwerp",
+          "transport_mode": "ROAD",
+          "duration": 10.54,
+          "cost": 1093.96,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.42,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Antwerp",
+          "destination": "Hamburg",
+          "transport_mode": "AIR",
+          "duration": 12.29,
+          "cost": 1161.09,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.42,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e0c869de-9e57-5e8c-9c5a-59f422c32a2c",
+      "shipment_id": "ca71cda0-a988-56c7-857a-102ec0a40809",
+      "route_name": "Express Route",
+      "total_cost": 8460.85,
+      "transit_time": 8.47,
+      "delay_probability": 0.0,
+      "reliability": 1.0,
+      "aggregate_risk": 0.1,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Hamburg",
+          "transport_mode": "RAIL",
+          "duration": 8.47,
+          "cost": 8460.85,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "6cb5b772-100b-5e41-aaf6-b476aa0f0007",
+      "shipment_id": "ca71cda0-a988-56c7-857a-102ec0a40809",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 2027.18,
+      "transit_time": 15.29,
+      "delay_probability": 0.57,
+      "reliability": 0.43,
+      "aggregate_risk": 0.79,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Hamburg",
+          "transport_mode": "RAIL",
+          "duration": 8.01,
+          "cost": 923.36,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.79,
+              "description": "Simulated operational risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Hamburg",
+          "destination": "Los Angeles",
+          "transport_mode": "AIR",
+          "duration": 7.28,
+          "cost": 1103.82,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.79,
+              "description": "Simulated operational risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3d7010e0-4be1-5e7f-8c50-9ecfd33b9012",
+      "shipment_id": "bc7f5e0d-a578-5672-a069-165f1209fc88",
+      "route_name": "Balanced Route",
+      "total_cost": 2579.59,
+      "transit_time": 27.97,
+      "delay_probability": 0.22,
+      "reliability": 0.78,
+      "aggregate_risk": 0.21,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "New York",
+          "destination": "Rotterdam",
+          "transport_mode": "ROAD",
+          "duration": 10.45,
+          "cost": 693.33,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Rotterdam",
+          "destination": "Busan",
+          "transport_mode": "RAIL",
+          "duration": 10.12,
+          "cost": 937.22,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "Busan",
+          "destination": "Singapore",
+          "transport_mode": "ROAD",
+          "duration": 7.4,
+          "cost": 949.04,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "33f0d7ed-7a6c-5c7d-b901-4d982c3fe172",
+      "shipment_id": "bc7f5e0d-a578-5672-a069-165f1209fc88",
+      "route_name": "Economy Route",
+      "total_cost": 1599.5,
+      "transit_time": 32.44,
+      "delay_probability": 0.36,
+      "reliability": 0.64,
+      "aggregate_risk": 0.44,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "New York",
+          "destination": "Singapore",
+          "transport_mode": "ROAD",
+          "duration": 32.44,
+          "cost": 1599.5,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.44,
+              "description": "Simulated weather risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2a1bc859-1a8c-5124-ba98-217e7eaeed82",
+      "shipment_id": "bc7f5e0d-a578-5672-a069-165f1209fc88",
+      "route_name": "Express Route",
+      "total_cost": 4111.61,
+      "transit_time": 16.33,
+      "delay_probability": 0.0,
+      "reliability": 1.0,
+      "aggregate_risk": 0.11,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "New York",
+          "destination": "Hamburg",
+          "transport_mode": "ROAD",
+          "duration": 9.18,
+          "cost": 1773.37,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Hamburg",
+          "destination": "Singapore",
+          "transport_mode": "SEA",
+          "duration": 7.15,
+          "cost": 2338.24,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "d3ad3130-68be-5ea3-91e8-42ef78d9fadf",
+      "shipment_id": "bc7f5e0d-a578-5672-a069-165f1209fc88",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 1176.25,
+      "transit_time": 28.32,
+      "delay_probability": 0.63,
+      "reliability": 0.37,
+      "aggregate_risk": 0.88,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "New York",
+          "destination": "Singapore",
+          "transport_mode": "ROAD",
+          "duration": 10.15,
+          "cost": 435.37,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.88,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Singapore",
+          "destination": "Shanghai",
+          "transport_mode": "RAIL",
+          "duration": 8.64,
+          "cost": 356.11,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.88,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "Shanghai",
+          "destination": "Singapore",
+          "transport_mode": "AIR",
+          "duration": 9.53,
+          "cost": 384.77,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.88,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9e69015b-6dc9-5a13-91f5-888f79ecc51c",
+      "shipment_id": "b71eb350-5c31-5f56-b732-c213af01eac4",
+      "route_name": "Balanced Route",
+      "total_cost": 7003.62,
+      "transit_time": 15.42,
+      "delay_probability": 0.18,
+      "reliability": 0.82,
+      "aggregate_risk": 0.19,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Dubai",
+          "destination": "Rotterdam",
+          "transport_mode": "AIR",
+          "duration": 4.72,
+          "cost": 2295.41,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Rotterdam",
+          "destination": "New York",
+          "transport_mode": "SEA",
+          "duration": 5.56,
+          "cost": 2510.57,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "New York",
+          "destination": "Antwerp",
+          "transport_mode": "RAIL",
+          "duration": 5.14,
+          "cost": 2197.64,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "048d9e7e-e863-59ef-82ad-d0bbf6778db6",
+      "shipment_id": "b71eb350-5c31-5f56-b732-c213af01eac4",
+      "route_name": "Economy Route",
+      "total_cost": 5720.01,
+      "transit_time": 17.29,
+      "delay_probability": 0.39,
+      "reliability": 0.61,
+      "aggregate_risk": 0.41,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Dubai",
+          "destination": "New York",
+          "transport_mode": "ROAD",
+          "duration": 8.57,
+          "cost": 2751.97,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.41,
+              "description": "Simulated weather risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "New York",
+          "destination": "Antwerp",
+          "transport_mode": "ROAD",
+          "duration": 8.72,
+          "cost": 2968.04,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.41,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f982679d-142c-5d22-8220-39016761378b",
+      "shipment_id": "b71eb350-5c31-5f56-b732-c213af01eac4",
+      "route_name": "Express Route",
+      "total_cost": 16132.93,
+      "transit_time": 9.43,
+      "delay_probability": 0.09,
+      "reliability": 0.91,
+      "aggregate_risk": 0.11,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Dubai",
+          "destination": "New York",
+          "transport_mode": "SEA",
+          "duration": 3.02,
+          "cost": 5456.43,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "New York",
+          "destination": "Shanghai",
+          "transport_mode": "ROAD",
+          "duration": 3.34,
+          "cost": 5897.56,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "Shanghai",
+          "destination": "Antwerp",
+          "transport_mode": "AIR",
+          "duration": 3.07,
+          "cost": 4778.94,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "e1a33775-150b-52a1-a348-7531743d94c0",
+      "shipment_id": "b71eb350-5c31-5f56-b732-c213af01eac4",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 4296.83,
+      "transit_time": 14.49,
+      "delay_probability": 0.59,
+      "reliability": 0.41,
+      "aggregate_risk": 0.84,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Dubai",
+          "destination": "Rotterdam",
+          "transport_mode": "SEA",
+          "duration": 5.07,
+          "cost": 1394.2,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.84,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Rotterdam",
+          "destination": "Busan",
+          "transport_mode": "RAIL",
+          "duration": 4.59,
+          "cost": 1310.97,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.84,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "Busan",
+          "destination": "Antwerp",
+          "transport_mode": "ROAD",
+          "duration": 4.83,
+          "cost": 1591.66,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.84,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f57ee981-9ecc-50ae-b19a-5c887c8d2c76",
+      "shipment_id": "15efba69-3edb-5348-8a06-21c1daf7b4fd",
+      "route_name": "Balanced Route",
+      "total_cost": 8653.45,
+      "transit_time": 17.62,
+      "delay_probability": 0.25,
+      "reliability": 0.75,
+      "aggregate_risk": 0.22,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "New York",
+          "destination": "Hamburg",
+          "transport_mode": "SEA",
+          "duration": 8.16,
+          "cost": 3741.73,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Hamburg",
+          "destination": "Dubai",
+          "transport_mode": "AIR",
+          "duration": 9.46,
+          "cost": 4911.72,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "163e13b0-ed21-54f2-936f-9e3e2c54d5fa",
+      "shipment_id": "15efba69-3edb-5348-8a06-21c1daf7b4fd",
+      "route_name": "Economy Route",
+      "total_cost": 7761.47,
+      "transit_time": 29.97,
+      "delay_probability": 0.36,
+      "reliability": 0.64,
+      "aggregate_risk": 0.39,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "New York",
+          "destination": "Shanghai",
+          "transport_mode": "RAIL",
+          "duration": 13.94,
+          "cost": 3695.82,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.39,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Shanghai",
+          "destination": "Dubai",
+          "transport_mode": "RAIL",
+          "duration": 16.03,
+          "cost": 4065.65,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.39,
+              "description": "Simulated operational risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "402b554a-f63f-555c-a7cc-3bff1ac42dad",
+      "shipment_id": "15efba69-3edb-5348-8a06-21c1daf7b4fd",
+      "route_name": "Express Route",
+      "total_cost": 14066.25,
+      "transit_time": 10.8,
+      "delay_probability": 0.14,
+      "reliability": 0.86,
+      "aggregate_risk": 0.11,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "New York",
+          "destination": "Hamburg",
+          "transport_mode": "AIR",
+          "duration": 3.47,
+          "cost": 5253.39,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Hamburg",
+          "destination": "Antwerp",
+          "transport_mode": "RAIL",
+          "duration": 3.47,
+          "cost": 4219.36,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "Antwerp",
+          "destination": "Dubai",
+          "transport_mode": "SEA",
+          "duration": 3.86,
+          "cost": 4593.5,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "4ab8b216-8846-5c8c-832b-497ca4abe65b",
+      "shipment_id": "15efba69-3edb-5348-8a06-21c1daf7b4fd",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 4440.4,
+      "transit_time": 22.26,
+      "delay_probability": 0.57,
+      "reliability": 0.43,
+      "aggregate_risk": 0.74,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "New York",
+          "destination": "Hamburg",
+          "transport_mode": "ROAD",
+          "duration": 11.03,
+          "cost": 2389.0,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.74,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Hamburg",
+          "destination": "Dubai",
+          "transport_mode": "ROAD",
+          "duration": 11.23,
+          "cost": 2051.4,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.74,
+              "description": "Simulated operational risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "703765c0-1b18-5247-91fa-717a6618cf52",
+      "shipment_id": "dfec856d-9954-5059-9c1f-1c4d02e5e8a1",
+      "route_name": "Balanced Route",
+      "total_cost": 7587.94,
+      "transit_time": 13.61,
+      "delay_probability": 0.22,
+      "reliability": 0.78,
+      "aggregate_risk": 0.22,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Antwerp",
+          "destination": "Shenzhen",
+          "transport_mode": "RAIL",
+          "duration": 5.6,
+          "cost": 3386.08,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Shenzhen",
+          "destination": "Singapore",
+          "transport_mode": "SEA",
+          "duration": 8.01,
+          "cost": 4201.86,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "4427c0e3-b268-59c0-8592-e2f7a550ab38",
+      "shipment_id": "dfec856d-9954-5059-9c1f-1c4d02e5e8a1",
+      "route_name": "Economy Route",
+      "total_cost": 5390.64,
+      "transit_time": 24.24,
+      "delay_probability": 0.38,
+      "reliability": 0.62,
+      "aggregate_risk": 0.44,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Antwerp",
+          "destination": "Singapore",
+          "transport_mode": "RAIL",
+          "duration": 24.24,
+          "cost": 5390.64,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.44,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c8490e32-ce6d-50e8-8c72-d811c494c738",
+      "shipment_id": "dfec856d-9954-5059-9c1f-1c4d02e5e8a1",
+      "route_name": "Express Route",
+      "total_cost": 14212.86,
+      "transit_time": 10.18,
+      "delay_probability": 0.04,
+      "reliability": 0.96,
+      "aggregate_risk": 0.1,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Antwerp",
+          "destination": "Singapore",
+          "transport_mode": "RAIL",
+          "duration": 10.18,
+          "cost": 14212.86,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "5236030f-2e10-5dc0-96b8-75f507c4ae4f",
+      "shipment_id": "dfec856d-9954-5059-9c1f-1c4d02e5e8a1",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 3303.07,
+      "transit_time": 16.18,
+      "delay_probability": 0.56,
+      "reliability": 0.44,
+      "aggregate_risk": 0.88,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Antwerp",
+          "destination": "New York",
+          "transport_mode": "AIR",
+          "duration": 5.84,
+          "cost": 1035.4,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.88,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "New York",
+          "destination": "Shanghai",
+          "transport_mode": "RAIL",
+          "duration": 5.68,
+          "cost": 1030.29,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.88,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "Shanghai",
+          "destination": "Singapore",
+          "transport_mode": "RAIL",
+          "duration": 4.66,
+          "cost": 1237.38,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.88,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "df64a851-6526-5ab8-8606-d07d9edc3cb1",
+      "shipment_id": "41c17b9f-7dc1-5320-9bd5-838b2a8d76fa",
+      "route_name": "Balanced Route",
+      "total_cost": 3349.83,
+      "transit_time": 11.96,
+      "delay_probability": 0.19,
+      "reliability": 0.81,
+      "aggregate_risk": 0.2,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Busan",
+          "destination": "Singapore",
+          "transport_mode": "SEA",
+          "duration": 11.96,
+          "cost": 3349.83,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "ff2e4fa9-7613-55f7-925c-047803ec4721",
+      "shipment_id": "41c17b9f-7dc1-5320-9bd5-838b2a8d76fa",
+      "route_name": "Economy Route",
+      "total_cost": 2125.55,
+      "transit_time": 15.63,
+      "delay_probability": 0.38,
+      "reliability": 0.62,
+      "aggregate_risk": 0.36,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Busan",
+          "destination": "Dubai",
+          "transport_mode": "ROAD",
+          "duration": 8.09,
+          "cost": 1222.75,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.36,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Dubai",
+          "destination": "Singapore",
+          "transport_mode": "SEA",
+          "duration": 7.54,
+          "cost": 902.8,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.36,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f85b4178-ad28-53a1-8ef8-87f0ffa9a8e7",
+      "shipment_id": "41c17b9f-7dc1-5320-9bd5-838b2a8d76fa",
+      "route_name": "Express Route",
+      "total_cost": 4573.58,
+      "transit_time": 7.27,
+      "delay_probability": 0.03,
+      "reliability": 0.97,
+      "aggregate_risk": 0.1,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Busan",
+          "destination": "Shenzhen",
+          "transport_mode": "RAIL",
+          "duration": 3.4,
+          "cost": 2524.69,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Shenzhen",
+          "destination": "Singapore",
+          "transport_mode": "SEA",
+          "duration": 3.87,
+          "cost": 2048.89,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "a0e22657-df24-562c-952e-f184a1afc499",
+      "shipment_id": "41c17b9f-7dc1-5320-9bd5-838b2a8d76fa",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 1429.43,
+      "transit_time": 13.53,
+      "delay_probability": 0.6,
+      "reliability": 0.4,
+      "aggregate_risk": 0.86,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Busan",
+          "destination": "Antwerp",
+          "transport_mode": "AIR",
+          "duration": 6.8,
+          "cost": 735.86,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.86,
+              "description": "Simulated operational risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Antwerp",
+          "destination": "Singapore",
+          "transport_mode": "ROAD",
+          "duration": 6.73,
+          "cost": 693.57,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.86,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3af60493-523b-5b0c-b004-777648bea8c4",
+      "shipment_id": "04dc3b2a-cbc7-5aab-b933-64e73ec5c5d6",
+      "route_name": "Balanced Route",
+      "total_cost": 4162.54,
+      "transit_time": 31.7,
+      "delay_probability": 0.27,
+      "reliability": 0.73,
+      "aggregate_risk": 0.18,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Shenzhen",
+          "destination": "Singapore",
+          "transport_mode": "RAIL",
+          "duration": 16.26,
+          "cost": 2142.26,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Singapore",
+          "destination": "Shanghai",
+          "transport_mode": "RAIL",
+          "duration": 15.44,
+          "cost": 2020.28,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "674a982a-c678-5435-a0dd-c0ed283896d0",
+      "shipment_id": "04dc3b2a-cbc7-5aab-b933-64e73ec5c5d6",
+      "route_name": "Economy Route",
+      "total_cost": 3133.36,
+      "transit_time": 44.64,
+      "delay_probability": 0.41,
+      "reliability": 0.59,
+      "aggregate_risk": 0.43,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Shenzhen",
+          "destination": "Shanghai",
+          "transport_mode": "RAIL",
+          "duration": 44.64,
+          "cost": 3133.36,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.43,
+              "description": "Simulated weather risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2eb466b1-f07e-52d2-842f-aa03ebcae595",
+      "shipment_id": "04dc3b2a-cbc7-5aab-b933-64e73ec5c5d6",
+      "route_name": "Express Route",
+      "total_cost": 6857.47,
+      "transit_time": 17.76,
+      "delay_probability": 0.1,
+      "reliability": 0.9,
+      "aggregate_risk": 0.09,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Shenzhen",
+          "destination": "Hamburg",
+          "transport_mode": "SEA",
+          "duration": 6.63,
+          "cost": 2351.94,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Hamburg",
+          "destination": "Dubai",
+          "transport_mode": "SEA",
+          "duration": 6.26,
+          "cost": 2428.45,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "Dubai",
+          "destination": "Shanghai",
+          "transport_mode": "RAIL",
+          "duration": 4.87,
+          "cost": 2077.08,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "5ca3567c-b346-545c-8c21-dbe609174427",
+      "shipment_id": "04dc3b2a-cbc7-5aab-b933-64e73ec5c5d6",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 2238.77,
+      "transit_time": 32.41,
+      "delay_probability": 0.61,
+      "reliability": 0.39,
+      "aggregate_risk": 0.75,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Shenzhen",
+          "destination": "Shanghai",
+          "transport_mode": "ROAD",
+          "duration": 32.41,
+          "cost": 2238.77,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.75,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ad6bae5a-0d93-521f-a67e-912b1098038d",
+      "shipment_id": "b9a5e104-5147-5d36-802c-e7fd1aeaac38",
+      "route_name": "Balanced Route",
+      "total_cost": 1939.41,
+      "transit_time": 26.3,
+      "delay_probability": 0.23,
+      "reliability": 0.77,
+      "aggregate_risk": 0.19,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Hamburg",
+          "transport_mode": "SEA",
+          "duration": 9.43,
+          "cost": 608.55,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Hamburg",
+          "destination": "Busan",
+          "transport_mode": "SEA",
+          "duration": 8.74,
+          "cost": 641.44,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "Busan",
+          "destination": "New York",
+          "transport_mode": "ROAD",
+          "duration": 8.13,
+          "cost": 689.42,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "0c3d71b6-5a9b-50ba-910e-944e4e319048",
+      "shipment_id": "b9a5e104-5147-5d36-802c-e7fd1aeaac38",
+      "route_name": "Economy Route",
+      "total_cost": 1602.58,
+      "transit_time": 33.39,
+      "delay_probability": 0.45,
+      "reliability": 0.55,
+      "aggregate_risk": 0.39,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Busan",
+          "transport_mode": "ROAD",
+          "duration": 16.07,
+          "cost": 718.76,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.39,
+              "description": "Simulated weather risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Busan",
+          "destination": "New York",
+          "transport_mode": "SEA",
+          "duration": 17.32,
+          "cost": 883.82,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.39,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9b533f44-6d55-541c-80d5-b288901ede11",
+      "shipment_id": "b9a5e104-5147-5d36-802c-e7fd1aeaac38",
+      "route_name": "Express Route",
+      "total_cost": 4569.15,
+      "transit_time": 14.57,
+      "delay_probability": 0.09,
+      "reliability": 0.91,
+      "aggregate_risk": 0.09,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Dubai",
+          "transport_mode": "AIR",
+          "duration": 6.7,
+          "cost": 2156.52,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Dubai",
+          "destination": "New York",
+          "transport_mode": "AIR",
+          "duration": 7.87,
+          "cost": 2412.63,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "d007428a-f0f3-5286-bcbd-d49e5010d8ae",
+      "shipment_id": "b9a5e104-5147-5d36-802c-e7fd1aeaac38",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 1227.48,
+      "transit_time": 31.31,
+      "delay_probability": 0.57,
+      "reliability": 0.43,
+      "aggregate_risk": 0.73,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "New York",
+          "transport_mode": "ROAD",
+          "duration": 31.31,
+          "cost": 1227.48,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.73,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e441c657-5673-5424-bc02-5382d2c9b5dc",
+      "shipment_id": "58107fa1-63ee-5bc9-bdeb-f26e6b4d888b",
+      "route_name": "Balanced Route",
+      "total_cost": 7009.38,
+      "transit_time": 22.48,
+      "delay_probability": 0.28,
+      "reliability": 0.72,
+      "aggregate_risk": 0.19,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Shenzhen",
+          "destination": "Antwerp",
+          "transport_mode": "RAIL",
+          "duration": 6.22,
+          "cost": 2457.17,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Antwerp",
+          "destination": "Los Angeles",
+          "transport_mode": "ROAD",
+          "duration": 7.71,
+          "cost": 2180.29,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "Los Angeles",
+          "destination": "Rotterdam",
+          "transport_mode": "ROAD",
+          "duration": 8.55,
+          "cost": 2371.92,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "836db94f-51ef-5754-af6d-8f86be57d1ac",
+      "shipment_id": "58107fa1-63ee-5bc9-bdeb-f26e6b4d888b",
+      "route_name": "Economy Route",
+      "total_cost": 4522.1,
+      "transit_time": 36.01,
+      "delay_probability": 0.45,
+      "reliability": 0.55,
+      "aggregate_risk": 0.41,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Shenzhen",
+          "destination": "Los Angeles",
+          "transport_mode": "RAIL",
+          "duration": 13.93,
+          "cost": 1636.6,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.41,
+              "description": "Simulated weather risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Los Angeles",
+          "destination": "Rotterdam",
+          "transport_mode": "AIR",
+          "duration": 10.96,
+          "cost": 1275.67,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.41,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "Rotterdam",
+          "destination": "Busan",
+          "transport_mode": "AIR",
+          "duration": 11.12,
+          "cost": 1609.83,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.41,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e5d41c45-cc77-54ab-8fa7-36a2803dd2ff",
+      "shipment_id": "58107fa1-63ee-5bc9-bdeb-f26e6b4d888b",
+      "route_name": "Express Route",
+      "total_cost": 11718.83,
+      "transit_time": 15.3,
+      "delay_probability": 0.0,
+      "reliability": 1.0,
+      "aggregate_risk": 0.1,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Shenzhen",
+          "destination": "Busan",
+          "transport_mode": "RAIL",
+          "duration": 5.82,
+          "cost": 4148.55,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Busan",
+          "destination": "Rotterdam",
+          "transport_mode": "ROAD",
+          "duration": 4.21,
+          "cost": 3856.41,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "Rotterdam",
+          "destination": "New York",
+          "transport_mode": "RAIL",
+          "duration": 5.27,
+          "cost": 3713.87,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "e5a57f6d-a0f4-5132-9d8e-47edbbeb8c78",
+      "shipment_id": "58107fa1-63ee-5bc9-bdeb-f26e6b4d888b",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 3089.03,
+      "transit_time": 30.95,
+      "delay_probability": 0.64,
+      "reliability": 0.36,
+      "aggregate_risk": 0.78,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Shenzhen",
+          "destination": "Singapore",
+          "transport_mode": "SEA",
+          "duration": 14.19,
+          "cost": 1539.29,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.78,
+              "description": "Simulated operational risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Singapore",
+          "destination": "Rotterdam",
+          "transport_mode": "SEA",
+          "duration": 16.76,
+          "cost": 1549.74,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.78,
+              "description": "Simulated operational risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "07666bce-000e-538a-8cb1-fac9c2929ae2",
+      "shipment_id": "78df42aa-ea31-5e9c-8da1-4437485e8376",
+      "route_name": "Balanced Route",
+      "total_cost": 3729.51,
+      "transit_time": 22.02,
+      "delay_probability": 0.21,
+      "reliability": 0.79,
+      "aggregate_risk": 0.21,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Singapore",
+          "transport_mode": "AIR",
+          "duration": 9.84,
+          "cost": 1899.06,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Singapore",
+          "destination": "Rotterdam",
+          "transport_mode": "ROAD",
+          "duration": 12.18,
+          "cost": 1830.45,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "23cf48d9-cee1-53f5-bd3c-2e06d7e5f3e6",
+      "shipment_id": "78df42aa-ea31-5e9c-8da1-4437485e8376",
+      "route_name": "Economy Route",
+      "total_cost": 2360.19,
+      "transit_time": 32.91,
+      "delay_probability": 0.41,
+      "reliability": 0.59,
+      "aggregate_risk": 0.42,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Busan",
+          "transport_mode": "SEA",
+          "duration": 9.89,
+          "cost": 666.71,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.42,
+              "description": "Simulated weather risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Busan",
+          "destination": "Dubai",
+          "transport_mode": "RAIL",
+          "duration": 13.05,
+          "cost": 845.62,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.42,
+              "description": "Simulated weather risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "Dubai",
+          "destination": "Rotterdam",
+          "transport_mode": "AIR",
+          "duration": 9.97,
+          "cost": 847.86,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.42,
+              "description": "Simulated weather risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3cc7424f-9938-51e7-b16a-65a4f2f32d97",
+      "shipment_id": "78df42aa-ea31-5e9c-8da1-4437485e8376",
+      "route_name": "Express Route",
+      "total_cost": 6499.4,
+      "transit_time": 11.79,
+      "delay_probability": 0.02,
+      "reliability": 0.98,
+      "aggregate_risk": 0.1,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Rotterdam",
+          "transport_mode": "SEA",
+          "duration": 11.79,
+          "cost": 6499.4,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "0277e12e-2b97-5825-beee-e0f2d139081a",
+      "shipment_id": "78df42aa-ea31-5e9c-8da1-4437485e8376",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 1716.52,
+      "transit_time": 29.5,
+      "delay_probability": 0.59,
+      "reliability": 0.41,
+      "aggregate_risk": 0.85,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Shenzhen",
+          "transport_mode": "SEA",
+          "duration": 9.43,
+          "cost": 499.23,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.85,
+              "description": "Simulated operational risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Shenzhen",
+          "destination": "New York",
+          "transport_mode": "AIR",
+          "duration": 8.8,
+          "cost": 684.24,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.85,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "New York",
+          "destination": "Rotterdam",
+          "transport_mode": "AIR",
+          "duration": 11.27,
+          "cost": 533.05,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.85,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1233edca-0217-5693-9b52-881e0feac427",
+      "shipment_id": "063dfbec-2652-5a02-b8f8-ed0a0fe1f2f0",
+      "route_name": "Balanced Route",
+      "total_cost": 3752.35,
+      "transit_time": 27.68,
+      "delay_probability": 0.16,
+      "reliability": 0.84,
+      "aggregate_risk": 0.2,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Shanghai",
+          "destination": "Hamburg",
+          "transport_mode": "AIR",
+          "duration": 8.99,
+          "cost": 1256.09,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Hamburg",
+          "destination": "Rotterdam",
+          "transport_mode": "AIR",
+          "duration": 9.42,
+          "cost": 1191.62,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "Rotterdam",
+          "destination": "Hamburg",
+          "transport_mode": "RAIL",
+          "duration": 9.27,
+          "cost": 1304.64,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "6e1354eb-6ac2-5bcb-bd45-5370191461fe",
+      "shipment_id": "063dfbec-2652-5a02-b8f8-ed0a0fe1f2f0",
+      "route_name": "Economy Route",
+      "total_cost": 3132.5,
+      "transit_time": 41.87,
+      "delay_probability": 0.37,
+      "reliability": 0.63,
+      "aggregate_risk": 0.4,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Shanghai",
+          "destination": "Los Angeles",
+          "transport_mode": "RAIL",
+          "duration": 14.32,
+          "cost": 884.14,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.4,
+              "description": "Simulated operational risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Los Angeles",
+          "destination": "Busan",
+          "transport_mode": "ROAD",
+          "duration": 13.66,
+          "cost": 1119.52,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.4,
+              "description": "Simulated operational risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "Busan",
+          "destination": "Hamburg",
+          "transport_mode": "ROAD",
+          "duration": 13.89,
+          "cost": 1128.84,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.4,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b0cb6e84-151c-5017-a39d-82cd4871212a",
+      "shipment_id": "063dfbec-2652-5a02-b8f8-ed0a0fe1f2f0",
+      "route_name": "Express Route",
+      "total_cost": 7603.03,
+      "transit_time": 14.26,
+      "delay_probability": 0.02,
+      "reliability": 0.98,
+      "aggregate_risk": 0.11,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Shanghai",
+          "destination": "Singapore",
+          "transport_mode": "SEA",
+          "duration": 4.47,
+          "cost": 2686.12,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Singapore",
+          "destination": "New York",
+          "transport_mode": "ROAD",
+          "duration": 5.69,
+          "cost": 2087.51,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "New York",
+          "destination": "Hamburg",
+          "transport_mode": "ROAD",
+          "duration": 4.1,
+          "cost": 2829.4,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "9f194c46-ac76-5f03-8e22-b96bdae9923b",
+      "shipment_id": "063dfbec-2652-5a02-b8f8-ed0a0fe1f2f0",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 1941.05,
+      "transit_time": 31.33,
+      "delay_probability": 0.57,
+      "reliability": 0.43,
+      "aggregate_risk": 0.79,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Shanghai",
+          "destination": "Shenzhen",
+          "transport_mode": "RAIL",
+          "duration": 15.89,
+          "cost": 966.47,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.79,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Shenzhen",
+          "destination": "Hamburg",
+          "transport_mode": "AIR",
+          "duration": 15.44,
+          "cost": 974.58,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.79,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16998160-aeca-51d8-8710-2aab7898f0a6",
+      "shipment_id": "e64c09de-c858-5a3e-bbe3-123f5872ec37",
+      "route_name": "Balanced Route",
+      "total_cost": 5752.1,
+      "transit_time": 14.85,
+      "delay_probability": 0.13,
+      "reliability": 0.87,
+      "aggregate_risk": 0.2,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Shanghai",
+          "transport_mode": "ROAD",
+          "duration": 14.85,
+          "cost": 5752.1,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "e117cc0d-c7ee-5f0a-a811-7b666a6491ca",
+      "shipment_id": "e64c09de-c858-5a3e-bbe3-123f5872ec37",
+      "route_name": "Economy Route",
+      "total_cost": 5235.79,
+      "transit_time": 23.22,
+      "delay_probability": 0.36,
+      "reliability": 0.64,
+      "aggregate_risk": 0.4,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Busan",
+          "transport_mode": "ROAD",
+          "duration": 8.82,
+          "cost": 1476.16,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.4,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Busan",
+          "destination": "Singapore",
+          "transport_mode": "SEA",
+          "duration": 7.69,
+          "cost": 1843.12,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.4,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "Singapore",
+          "destination": "Shanghai",
+          "transport_mode": "ROAD",
+          "duration": 6.71,
+          "cost": 1916.51,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.4,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "226f8d14-18a3-54fc-9678-1a73f3482017",
+      "shipment_id": "e64c09de-c858-5a3e-bbe3-123f5872ec37",
+      "route_name": "Express Route",
+      "total_cost": 14810.82,
+      "transit_time": 8.8,
+      "delay_probability": 0.05,
+      "reliability": 0.95,
+      "aggregate_risk": 0.09,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Shanghai",
+          "transport_mode": "RAIL",
+          "duration": 8.8,
+          "cost": 14810.82,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "dcb3e241-d8b8-520d-973d-ffa98dd4ff04",
+      "shipment_id": "e64c09de-c858-5a3e-bbe3-123f5872ec37",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 2970.61,
+      "transit_time": 20.21,
+      "delay_probability": 0.59,
+      "reliability": 0.41,
+      "aggregate_risk": 0.73,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Singapore",
+          "transport_mode": "SEA",
+          "duration": 11.33,
+          "cost": 1495.29,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.73,
+              "description": "Simulated operational risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Singapore",
+          "destination": "Shanghai",
+          "transport_mode": "ROAD",
+          "duration": 8.88,
+          "cost": 1475.32,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.73,
+              "description": "Simulated weather risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4deacffc-3bfe-5c1f-93a7-77fa1e4018b9",
+      "shipment_id": "060b37c0-7d51-5511-9691-04b3844adaa1",
+      "route_name": "Balanced Route",
+      "total_cost": 8735.62,
+      "transit_time": 17.96,
+      "delay_probability": 0.16,
+      "reliability": 0.84,
+      "aggregate_risk": 0.21,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Rotterdam",
+          "transport_mode": "SEA",
+          "duration": 8.15,
+          "cost": 4066.84,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Rotterdam",
+          "destination": "Shenzhen",
+          "transport_mode": "AIR",
+          "duration": 9.81,
+          "cost": 4668.78,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "877d5d4b-1584-542a-86ba-9c3e33a30d54",
+      "shipment_id": "060b37c0-7d51-5511-9691-04b3844adaa1",
+      "route_name": "Economy Route",
+      "total_cost": 7163.03,
+      "transit_time": 22.72,
+      "delay_probability": 0.44,
+      "reliability": 0.56,
+      "aggregate_risk": 0.37,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Antwerp",
+          "transport_mode": "SEA",
+          "duration": 7.41,
+          "cost": 2372.43,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.37,
+              "description": "Simulated weather risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Antwerp",
+          "destination": "Shanghai",
+          "transport_mode": "RAIL",
+          "duration": 8.46,
+          "cost": 2540.74,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.37,
+              "description": "Simulated weather risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "Shanghai",
+          "destination": "Shenzhen",
+          "transport_mode": "ROAD",
+          "duration": 6.85,
+          "cost": 2249.86,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.37,
+              "description": "Simulated weather risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "94e2fd81-bb35-569f-95d1-2b0bb444f4eb",
+      "shipment_id": "060b37c0-7d51-5511-9691-04b3844adaa1",
+      "route_name": "Express Route",
+      "total_cost": 14114.91,
+      "transit_time": 11.37,
+      "delay_probability": 0.14,
+      "reliability": 0.86,
+      "aggregate_risk": 0.1,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Hamburg",
+          "transport_mode": "ROAD",
+          "duration": 6.28,
+          "cost": 7854.07,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Hamburg",
+          "destination": "Shenzhen",
+          "transport_mode": "ROAD",
+          "duration": 5.09,
+          "cost": 6260.84,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "512715e1-0579-515b-afbb-09d6cf4cfbcb",
+      "shipment_id": "060b37c0-7d51-5511-9691-04b3844adaa1",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 5167.93,
+      "transit_time": 19.19,
+      "delay_probability": 0.58,
+      "reliability": 0.42,
+      "aggregate_risk": 0.76,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Shenzhen",
+          "transport_mode": "ROAD",
+          "duration": 19.19,
+          "cost": 5167.93,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.76,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2a37d0ef-ca34-586b-8b9a-ec4b1d5c0790",
+      "shipment_id": "881182a4-af53-5085-b037-4840f40c1999",
+      "route_name": "Balanced Route",
+      "total_cost": 3137.82,
+      "transit_time": 15.08,
+      "delay_probability": 0.23,
+      "reliability": 0.77,
+      "aggregate_risk": 0.2,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "New York",
+          "destination": "Dubai",
+          "transport_mode": "AIR",
+          "duration": 5.5,
+          "cost": 993.9,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Dubai",
+          "destination": "Shanghai",
+          "transport_mode": "RAIL",
+          "duration": 5.34,
+          "cost": 1029.15,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "Shanghai",
+          "destination": "Shenzhen",
+          "transport_mode": "SEA",
+          "duration": 4.24,
+          "cost": 1114.77,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "051cb60a-50f2-5c96-8051-05daf2253197",
+      "shipment_id": "881182a4-af53-5085-b037-4840f40c1999",
+      "route_name": "Economy Route",
+      "total_cost": 2097.06,
+      "transit_time": 21.47,
+      "delay_probability": 0.38,
+      "reliability": 0.62,
+      "aggregate_risk": 0.44,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "New York",
+          "destination": "Shenzhen",
+          "transport_mode": "ROAD",
+          "duration": 21.47,
+          "cost": 2097.06,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.44,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a6df3dd7-2e91-5a7f-8086-149152dd0471",
+      "shipment_id": "881182a4-af53-5085-b037-4840f40c1999",
+      "route_name": "Express Route",
+      "total_cost": 6051.99,
+      "transit_time": 10.93,
+      "delay_probability": 0.0,
+      "reliability": 1.0,
+      "aggregate_risk": 0.09,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "New York",
+          "destination": "Shenzhen",
+          "transport_mode": "ROAD",
+          "duration": 10.93,
+          "cost": 6051.99,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "a799c2c7-8079-52e0-b281-5d887563d3f0",
+      "shipment_id": "881182a4-af53-5085-b037-4840f40c1999",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 1982.0,
+      "transit_time": 21.14,
+      "delay_probability": 0.6,
+      "reliability": 0.4,
+      "aggregate_risk": 0.78,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "New York",
+          "destination": "Los Angeles",
+          "transport_mode": "SEA",
+          "duration": 7.05,
+          "cost": 603.91,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.78,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Los Angeles",
+          "destination": "Dubai",
+          "transport_mode": "SEA",
+          "duration": 7.15,
+          "cost": 653.45,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.78,
+              "description": "Simulated weather risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "Dubai",
+          "destination": "Shenzhen",
+          "transport_mode": "AIR",
+          "duration": 6.94,
+          "cost": 724.64,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.78,
+              "description": "Simulated weather risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5c6eb417-e8e6-51b2-843d-31fb2d2a29ca",
+      "shipment_id": "9bec8eb3-6eee-516e-9122-a346728c2b0a",
+      "route_name": "Balanced Route",
+      "total_cost": 3413.47,
+      "transit_time": 13.24,
+      "delay_probability": 0.17,
+      "reliability": 0.83,
+      "aggregate_risk": 0.22,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "New York",
+          "destination": "Hamburg",
+          "transport_mode": "RAIL",
+          "duration": 4.29,
+          "cost": 1120.17,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Hamburg",
+          "destination": "New York",
+          "transport_mode": "RAIL",
+          "duration": 4.52,
+          "cost": 1191.25,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "New York",
+          "destination": "Dubai",
+          "transport_mode": "AIR",
+          "duration": 4.43,
+          "cost": 1102.05,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "07fc1a36-5fb6-5810-bdc6-681c3ec5921d",
+      "shipment_id": "9bec8eb3-6eee-516e-9122-a346728c2b0a",
+      "route_name": "Economy Route",
+      "total_cost": 2780.27,
+      "transit_time": 17.7,
+      "delay_probability": 0.44,
+      "reliability": 0.56,
+      "aggregate_risk": 0.42,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "New York",
+          "destination": "Dubai",
+          "transport_mode": "RAIL",
+          "duration": 17.7,
+          "cost": 2780.27,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.42,
+              "description": "Simulated weather risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4f0949c9-5f1b-57a1-a269-5e163ac38e47",
+      "shipment_id": "9bec8eb3-6eee-516e-9122-a346728c2b0a",
+      "route_name": "Express Route",
+      "total_cost": 6389.16,
+      "transit_time": 8.99,
+      "delay_probability": 0.13,
+      "reliability": 0.87,
+      "aggregate_risk": 0.1,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "New York",
+          "destination": "Antwerp",
+          "transport_mode": "ROAD",
+          "duration": 3.03,
+          "cost": 2259.64,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Antwerp",
+          "destination": "Singapore",
+          "transport_mode": "AIR",
+          "duration": 3.26,
+          "cost": 2114.77,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "Singapore",
+          "destination": "Dubai",
+          "transport_mode": "ROAD",
+          "duration": 2.7,
+          "cost": 2014.75,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "837f7768-f536-5a96-bbcf-9ddb935b06f3",
+      "shipment_id": "9bec8eb3-6eee-516e-9122-a346728c2b0a",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 1678.93,
+      "transit_time": 18.42,
+      "delay_probability": 0.6,
+      "reliability": 0.4,
+      "aggregate_risk": 0.81,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "New York",
+          "destination": "Dubai",
+          "transport_mode": "ROAD",
+          "duration": 18.42,
+          "cost": 1678.93,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.81,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7b496013-3091-50b8-a0d9-91bc33c616b0",
+      "shipment_id": "514f81cc-b026-5375-8ee1-53a3bdf8ba4b",
+      "route_name": "Balanced Route",
+      "total_cost": 5368.49,
+      "transit_time": 12.07,
+      "delay_probability": 0.13,
+      "reliability": 0.87,
+      "aggregate_risk": 0.2,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Singapore",
+          "transport_mode": "RAIL",
+          "duration": 5.5,
+          "cost": 2849.0,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Singapore",
+          "destination": "New York",
+          "transport_mode": "AIR",
+          "duration": 6.57,
+          "cost": 2519.49,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "1d5349d8-5549-51f7-a0a1-73f3bc3e1d88",
+      "shipment_id": "514f81cc-b026-5375-8ee1-53a3bdf8ba4b",
+      "route_name": "Economy Route",
+      "total_cost": 2312.97,
+      "transit_time": 23.08,
+      "delay_probability": 0.39,
+      "reliability": 0.61,
+      "aggregate_risk": 0.41,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Singapore",
+          "transport_mode": "RAIL",
+          "duration": 23.08,
+          "cost": 2312.97,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.41,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b62944dd-1eab-5c23-b7f3-6bdea78d01db",
+      "shipment_id": "514f81cc-b026-5375-8ee1-53a3bdf8ba4b",
+      "route_name": "Express Route",
+      "total_cost": 7258.67,
+      "transit_time": 7.92,
+      "delay_probability": 0.04,
+      "reliability": 0.96,
+      "aggregate_risk": 0.1,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Dubai",
+          "transport_mode": "SEA",
+          "duration": 2.72,
+          "cost": 2540.99,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Dubai",
+          "destination": "New York",
+          "transport_mode": "RAIL",
+          "duration": 2.7,
+          "cost": 2712.7,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "New York",
+          "destination": "Singapore",
+          "transport_mode": "ROAD",
+          "duration": 2.5,
+          "cost": 2004.98,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "bcac654c-5ffd-5634-94d3-b43ac4ffcc2f",
+      "shipment_id": "514f81cc-b026-5375-8ee1-53a3bdf8ba4b",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 1998.92,
+      "transit_time": 15.42,
+      "delay_probability": 0.6,
+      "reliability": 0.4,
+      "aggregate_risk": 0.75,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Los Angeles",
+          "destination": "Rotterdam",
+          "transport_mode": "RAIL",
+          "duration": 5.72,
+          "cost": 771.04,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.75,
+              "description": "Simulated weather risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Rotterdam",
+          "destination": "Dubai",
+          "transport_mode": "AIR",
+          "duration": 5.26,
+          "cost": 567.66,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.75,
+              "description": "Simulated weather risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "Dubai",
+          "destination": "Singapore",
+          "transport_mode": "AIR",
+          "duration": 4.44,
+          "cost": 660.22,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.75,
+              "description": "Simulated operational risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c39398d5-d6a0-5bcd-b8e2-eece3245373d",
+      "shipment_id": "839779cc-317b-5e37-9b91-2d3066df7ee2",
+      "route_name": "Balanced Route",
+      "total_cost": 3706.79,
+      "transit_time": 13.86,
+      "delay_probability": 0.21,
+      "reliability": 0.79,
+      "aggregate_risk": 0.22,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Shanghai",
+          "destination": "Singapore",
+          "transport_mode": "RAIL",
+          "duration": 13.86,
+          "cost": 3706.79,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "75b230ad-f2f0-52cf-8e7b-bb9522f0465f",
+      "shipment_id": "839779cc-317b-5e37-9b91-2d3066df7ee2",
+      "route_name": "Economy Route",
+      "total_cost": 1870.03,
+      "transit_time": 17.02,
+      "delay_probability": 0.34,
+      "reliability": 0.66,
+      "aggregate_risk": 0.4,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Shanghai",
+          "destination": "Antwerp",
+          "transport_mode": "SEA",
+          "duration": 9.07,
+          "cost": 1028.8,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.4,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Antwerp",
+          "destination": "Singapore",
+          "transport_mode": "AIR",
+          "duration": 7.95,
+          "cost": 841.23,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.4,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d3d63507-258a-596c-b950-6f0b4fc72804",
+      "shipment_id": "839779cc-317b-5e37-9b91-2d3066df7ee2",
+      "route_name": "Express Route",
+      "total_cost": 5592.19,
+      "transit_time": 7.51,
+      "delay_probability": 0.0,
+      "reliability": 1.0,
+      "aggregate_risk": 0.1,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Shanghai",
+          "destination": "Shenzhen",
+          "transport_mode": "SEA",
+          "duration": 3.84,
+          "cost": 2616.9,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Shenzhen",
+          "destination": "Singapore",
+          "transport_mode": "RAIL",
+          "duration": 3.67,
+          "cost": 2975.29,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "01fa3b6c-618f-5d5f-a4c2-cb5c61a32807",
+      "shipment_id": "839779cc-317b-5e37-9b91-2d3066df7ee2",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 1492.65,
+      "transit_time": 14.22,
+      "delay_probability": 0.59,
+      "reliability": 0.41,
+      "aggregate_risk": 0.75,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Shanghai",
+          "destination": "New York",
+          "transport_mode": "SEA",
+          "duration": 4.32,
+          "cost": 560.84,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.75,
+              "description": "Simulated operational risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "New York",
+          "destination": "Busan",
+          "transport_mode": "SEA",
+          "duration": 5.14,
+          "cost": 485.67,
+          "risk_factors": [
+            {
+              "category": "GEOPOLITICAL",
+              "severity": 0.75,
+              "description": "Simulated geopolitical risk"
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "origin": "Busan",
+          "destination": "Singapore",
+          "transport_mode": "RAIL",
+          "duration": 4.76,
+          "cost": 446.14,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.75,
+              "description": "Simulated weather risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "235c0441-4a57-5f94-a52d-30e09571661d",
+      "shipment_id": "54179b8a-8257-54ee-96a2-5657240fe4ef",
+      "route_name": "Balanced Route",
+      "total_cost": 5774.19,
+      "transit_time": 17.52,
+      "delay_probability": 0.23,
+      "reliability": 0.77,
+      "aggregate_risk": 0.2,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Rotterdam",
+          "transport_mode": "AIR",
+          "duration": 8.64,
+          "cost": 2885.2,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Rotterdam",
+          "destination": "Shenzhen",
+          "transport_mode": "AIR",
+          "duration": 8.88,
+          "cost": 2888.99,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "de265b9b-a83b-5059-a831-c9daa5619ff2",
+      "shipment_id": "54179b8a-8257-54ee-96a2-5657240fe4ef",
+      "route_name": "Economy Route",
+      "total_cost": 4692.37,
+      "transit_time": 33.0,
+      "delay_probability": 0.4,
+      "reliability": 0.6,
+      "aggregate_risk": 0.4,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Busan",
+          "transport_mode": "RAIL",
+          "duration": 17.21,
+          "cost": 2151.59,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.4,
+              "description": "Simulated operational risk"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "origin": "Busan",
+          "destination": "Shenzhen",
+          "transport_mode": "SEA",
+          "duration": 15.79,
+          "cost": 2540.78,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.4,
+              "description": "Simulated operational risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d35d0e04-a322-510e-998d-593fee789f96",
+      "shipment_id": "54179b8a-8257-54ee-96a2-5657240fe4ef",
+      "route_name": "Express Route",
+      "total_cost": 12131.93,
+      "transit_time": 12.36,
+      "delay_probability": 0.14,
+      "reliability": 0.86,
+      "aggregate_risk": 0.1,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Busan",
+          "transport_mode": "AIR",
+          "duration": 4.52,
+          "cost": 3935.22,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Busan",
+          "destination": "Rotterdam",
+          "transport_mode": "ROAD",
+          "duration": 3.57,
+          "cost": 4083.28,
+          "risk_factors": []
+        },
+        {
+          "sequence": 3,
+          "origin": "Rotterdam",
+          "destination": "Shenzhen",
+          "transport_mode": "SEA",
+          "duration": 4.27,
+          "cost": 4113.43,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "efd95201-ae00-5f57-8680-bc92751e3857",
+      "shipment_id": "54179b8a-8257-54ee-96a2-5657240fe4ef",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 3117.44,
+      "transit_time": 27.26,
+      "delay_probability": 0.61,
+      "reliability": 0.39,
+      "aggregate_risk": 0.79,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Singapore",
+          "destination": "Shenzhen",
+          "transport_mode": "ROAD",
+          "duration": 27.26,
+          "cost": 3117.44,
+          "risk_factors": [
+            {
+              "category": "OPERATIONAL",
+              "severity": 0.79,
+              "description": "Simulated operational risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "87654268-5561-5156-82b0-6cb50286bead",
+      "shipment_id": "b2322a45-c5f9-50f5-a9dd-cfa7d35db5f6",
+      "route_name": "Balanced Route",
+      "total_cost": 2450.8,
+      "transit_time": 13.76,
+      "delay_probability": 0.17,
+      "reliability": 0.83,
+      "aggregate_risk": 0.2,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Busan",
+          "destination": "Rotterdam",
+          "transport_mode": "ROAD",
+          "duration": 7.17,
+          "cost": 1101.84,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Rotterdam",
+          "destination": "Antwerp",
+          "transport_mode": "RAIL",
+          "duration": 6.59,
+          "cost": 1348.96,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "a898bd5b-eaf4-5fd9-b71a-252e1e36d798",
+      "shipment_id": "b2322a45-c5f9-50f5-a9dd-cfa7d35db5f6",
+      "route_name": "Economy Route",
+      "total_cost": 2154.76,
+      "transit_time": 18.07,
+      "delay_probability": 0.43,
+      "reliability": 0.57,
+      "aggregate_risk": 0.4,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Busan",
+          "destination": "Antwerp",
+          "transport_mode": "RAIL",
+          "duration": 18.07,
+          "cost": 2154.76,
+          "risk_factors": [
+            {
+              "category": "WEATHER",
+              "severity": 0.4,
+              "description": "Simulated weather risk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0dfc6ae0-b2c3-50d3-978d-9186309445a4",
+      "shipment_id": "b2322a45-c5f9-50f5-a9dd-cfa7d35db5f6",
+      "route_name": "Express Route",
+      "total_cost": 4842.19,
+      "transit_time": 6.87,
+      "delay_probability": 0.11,
+      "reliability": 0.89,
+      "aggregate_risk": 0.1,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Busan",
+          "destination": "Antwerp",
+          "transport_mode": "RAIL",
+          "duration": 3.76,
+          "cost": 2532.36,
+          "risk_factors": []
+        },
+        {
+          "sequence": 2,
+          "origin": "Antwerp",
+          "destination": "New York",
+          "transport_mode": "RAIL",
+          "duration": 3.11,
+          "cost": 2309.83,
+          "risk_factors": []
+        }
+      ]
+    },
+    {
+      "id": "8aa44bc5-9354-5f3a-a9ec-bdb866319e3e",
+      "shipment_id": "b2322a45-c5f9-50f5-a9dd-cfa7d35db5f6",
+      "route_name": "High-Risk Low-Cost",
+      "total_cost": 1323.49,
+      "transit_time": 15.36,
+      "delay_probability": 0.57,
+      "reliability": 0.43,
+      "aggregate_risk": 0.87,
+      "feasibility_status": "PENDING",
+      "violated_constraints": [],
+      "legs": [
+        {
+          "sequence": 1,
+          "origin": "Busan",
+          "destination": "Antwerp",
+          "transport_mode": "RAIL",
+          "duration": 15.36,
+          "cost": 1323.49,
+          "risk_factors": [
+            {
+              "category": "CONGESTION",
+              "severity": 0.87,
+              "description": "Simulated congestion risk"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
