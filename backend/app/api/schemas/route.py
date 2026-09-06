@@ -1,3 +1,4 @@
+from typing import List
 from uuid import UUID
 
 from pydantic import BaseModel, ConfigDict
@@ -42,3 +43,5 @@ class RouteResponse(RouteCreate):
     legs: List[RouteLegResponse]  # type: ignore
 
     model_config = ConfigDict(from_attributes=True)
+
+RouteResponse.model_rebuild()
