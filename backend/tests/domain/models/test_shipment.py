@@ -1,10 +1,9 @@
 from datetime import datetime, timezone
 
 import pytest
-from pydantic import ValidationError
-
 from app.domain.models.enums import CargoType, ShipmentPriority
 from app.domain.models.shipment import Shipment
+from pydantic import ValidationError
 
 
 def test_shipment_valid_creation():

@@ -2,9 +2,6 @@ from datetime import datetime, timedelta, timezone
 from uuid import uuid4
 
 import pytest
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-
 from app.domain.models.enums import (
     CargoType,
     FeasibilityStatus,
@@ -20,6 +17,8 @@ from app.infrastructure.repositories import (
     RouteRepository,
     ShipmentRepository,
 )
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 
 
 @pytest.fixture

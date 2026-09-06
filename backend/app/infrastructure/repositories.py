@@ -1,4 +1,5 @@
 import uuid
+from typing import List, Dict, Optional
 from uuid import UUID
 
 from sqlalchemy.orm import Session
@@ -24,15 +25,15 @@ class ShipmentRepository:
         self.session.merge(model)
         self.session.commit()
 
-    def get(self, shipment_id: UUID) -> Shipment | None:
-        model = (
-            self.session.query(ShipmentModel)
-            .filter(ShipmentModel.id == shipment_id)
-            .first()
-        )
+    def get(self, shipment_id: UUID) -> Optional[Shipment]:
+        model = self.session.query(ShipmentModel).filter(ShipmentModel.id == shipment_id).first()
         if not model:
             return None
         return DataMapper.to_domain_shipment(model)
+
+    def list(self) -> List[Shipment]:
+        models = self.session.query(ShipmentModel).all()
+        return [DataMapper.to_domain_shipment(m) for m in models]
 
 
 class RouteRepository:

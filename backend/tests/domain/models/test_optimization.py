@@ -1,9 +1,8 @@
 from uuid import uuid4
 
 import pytest
-from pydantic import ValidationError
-
 from app.domain.models.optimization import OptimizationProfile, OptimizationResult
+from pydantic import ValidationError
 
 
 def test_optimization_profile_valid():

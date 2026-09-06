@@ -1,10 +1,9 @@
 from uuid import uuid4
 
 import pytest
-from pydantic import ValidationError
-
 from app.domain.models.enums import FeasibilityStatus, RiskCategory, TransportMode
 from app.domain.models.route import RiskFactor, Route, RouteLeg
+from pydantic import ValidationError
 
 
 def test_route_creation_valid():

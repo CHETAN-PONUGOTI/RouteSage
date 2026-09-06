@@ -2,7 +2,6 @@ import math
 from uuid import uuid4
 
 import pytest
-
 from app.domain.models.enums import FeasibilityStatus, TransportMode
 from app.domain.models.optimization import OptimizationProfile
 from app.domain.models.route import Route, RouteLeg
