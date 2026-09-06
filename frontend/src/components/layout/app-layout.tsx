@@ -25,7 +25,7 @@ export function AppLayout({ children }: AppLayoutProps) {
                 <Route className="h-5 w-5 text-white" />
               </div>
               <span className="font-bold text-lg tracking-tight text-gray-900">
-                Safiri Route Intelligence
+                RouteStage
               </span>
             </Link>
             

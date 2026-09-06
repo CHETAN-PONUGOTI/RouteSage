@@ -24,7 +24,7 @@ describe('App Layout', () => {
         <div>Content</div>
       </AppLayout>
     )
-    expect(screen.getByText('Safiri Route Intelligence')).toBeInTheDocument()
+    expect(screen.getByText('RouteStage')).toBeInTheDocument()
     expect(screen.getByText('Content')).toBeInTheDocument()
   })
 })

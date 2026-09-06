@@ -6,7 +6,7 @@ import { AppLayout } from "../components/layout/app-layout";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Safiri Route Intelligence",
+  title: "RouteStage",
   description: "Explainable multi-objective shipment route decision platform.",
 };
 
