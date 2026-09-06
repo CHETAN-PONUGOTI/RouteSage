@@ -119,14 +119,14 @@ export default function EvaluatePage() {
     <div className="max-w-6xl mx-auto space-y-6 pb-12">
       <div className="flex items-center gap-4">
         <Link href={`/shipments/${shipmentId}`}>
-          <Button variant="ghost" size="icon">
-            <ArrowLeft className="h-5 w-5" />
+          <Button variant="outline" size="icon" className="border-gray-300">
+            <ArrowLeft className="h-5 w-5 text-gray-700" />
           </Button>
         </Link>
         <div>
-          <h1 className="text-3xl font-bold tracking-tight">Evaluate Routes</h1>
-          <p className="text-gray-500 mt-1 text-sm">
-            {shipment.origin} &rarr; {shipment.destination} (ID: {shipment.id})
+          <h1 className="text-3xl font-extrabold tracking-tight text-gray-900">Evaluate Routes</h1>
+          <p className="text-gray-600 mt-1 text-sm font-medium">
+            {shipment.origin} &rarr; {shipment.destination} <span className="font-mono text-xs text-gray-500">(ID: {shipment.id})</span>
           </p>
         </div>
       </div>
@@ -134,22 +134,30 @@ export default function EvaluatePage() {
       <div className="grid lg:grid-cols-3 gap-6">
         <div className="lg:col-span-1 space-y-6">
           <Card>
-            <CardHeader>
-              <CardTitle>Optimization Profile</CardTitle>
-              <p className="text-sm text-gray-500">Set relative importance weights (must sum to 1.0)</p>
+            <CardHeader className="border-b border-gray-100 pb-3">
+              <CardTitle className="text-lg font-bold text-gray-900">Optimization Profile</CardTitle>
+              <p className="text-xs text-gray-600">Set relative importance weights (must sum to 1.0)</p>
             </CardHeader>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-4 pt-4">
               {['cost', 'time', 'reliability', 'risk'].map((objective) => {
                 const key = (objective + '_weight') as keyof OptimizationProfile;
                 return (
-                  <div key={objective} className="space-y-1">
-                    <label htmlFor={key} className="text-sm font-medium capitalize">{objective} Weight</label>
+                  <div key={objective} className="space-y-1.5">
+                    <div className="flex justify-between items-center">
+                      <label htmlFor={key} className="text-xs font-bold text-gray-700 uppercase tracking-wider capitalize">
+                        {objective} Weight
+                      </label>
+                      <span className="text-xs font-mono font-bold text-gray-900">
+                        {((profile[key] as number) * 100).toFixed(0)}%
+                      </span>
+                    </div>
                     <Input 
                       id={key}
                       type="number" 
                       step="0.05" 
                       min="0" 
                       max="1"
+                      className="bg-white border-gray-300 text-gray-900 font-semibold"
                       value={profile[key] as number}
                       onChange={(e) => setProfile({ ...profile, [key]: parseFloat(e.target.value) || 0 })}
                     />
@@ -157,16 +165,16 @@ export default function EvaluatePage() {
                 );
               })}
 
-              <div className={`p-3 rounded-md border text-sm font-medium flex justify-between items-center ${isValidWeight ? 'bg-green-50 border-green-200 text-green-700' : 'bg-red-50 border-red-200 text-red-700'}`}>
+              <div className={`p-3 rounded-lg border text-sm font-bold flex justify-between items-center ${isValidWeight ? 'bg-emerald-50 border-emerald-300 text-emerald-900' : 'bg-red-50 border-red-300 text-red-900'}`}>
                 <span>Total Weight:</span>
                 <span>{totalWeight.toFixed(2)}</span>
               </div>
               {!isValidWeight && (
-                <p className="text-xs text-red-600 font-medium">Weights must sum exactly to 1.0</p>
+                <p className="text-xs text-red-600 font-bold">Weights must sum exactly to 1.0</p>
               )}
 
               <Button 
-                className="w-full" 
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold shadow-sm" 
                 onClick={handleOptimize} 
                 disabled={!isValidWeight || optimizing || routes.length === 0}
               >
@@ -174,7 +182,7 @@ export default function EvaluatePage() {
               </Button>
 
               {routes.length === 0 && (
-                <p className="text-xs text-orange-600 text-center mt-2">No candidate routes available.</p>
+                <p className="text-xs text-amber-700 font-bold text-center mt-2">No candidate routes available.</p>
               )}
               {optError && (
                 <Alert variant="destructive" className="mt-4">
@@ -187,40 +195,40 @@ export default function EvaluatePage() {
 
           {result && (
             <Card>
-              <CardHeader>
-                <CardTitle>Trade-offs (Pareto)</CardTitle>
+              <CardHeader className="border-b border-gray-100 pb-3">
+                <CardTitle className="text-lg font-bold text-gray-900">Trade-offs (Pareto)</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="pt-4">
                 <div className="space-y-4 text-sm">
                   <div>
-                    <h4 className="font-semibold text-gray-700 flex items-center gap-2 mb-2">
-                      <CheckCircle className="h-4 w-4 text-green-600" /> Pareto Efficient
+                    <h4 className="font-bold text-gray-900 flex items-center gap-2 mb-2">
+                      <CheckCircle className="h-4 w-4 text-emerald-600" /> Pareto Efficient
                     </h4>
-                    <ul className="list-disc pl-5 space-y-1 text-gray-600">
+                    <ul className="list-disc pl-5 space-y-1 text-gray-700 font-medium">
                       {result.tradeoffs?.pareto_efficient?.map((id: string) => (
                         <li key={id}>{routes.find(r => r.id === id)?.route_name || id}</li>
                       ))}
                       {(!result.tradeoffs?.pareto_efficient || result.tradeoffs.pareto_efficient.length === 0) && (
-                        <li>None</li>
+                        <li className="text-gray-500 italic">None</li>
                       )}
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-700 flex items-center gap-2 mb-2">
+                    <h4 className="font-bold text-gray-700 flex items-center gap-2 mb-2">
                       <XCircle className="h-4 w-4 text-gray-400" /> Dominated Routes
                     </h4>
-                    <ul className="list-disc pl-5 space-y-1 text-gray-500">
+                    <ul className="list-disc pl-5 space-y-1 text-gray-600">
                       {result.tradeoffs?.dominated?.map((id: string) => (
                         <li key={id}>{routes.find(r => r.id === id)?.route_name || id}</li>
                       ))}
                       {(!result.tradeoffs?.dominated || result.tradeoffs.dominated.length === 0) && (
-                        <li>None</li>
+                        <li className="text-gray-500 italic">None</li>
                       )}
                     </ul>
                   </div>
-                  <Alert className="bg-blue-50 border-blue-100 text-blue-800 mt-4">
+                  <Alert className="bg-blue-50 border-blue-200 text-blue-900 mt-4">
                     <Info className="h-4 w-4 text-blue-600" />
-                    <AlertDescription className="text-xs">
+                    <AlertDescription className="text-xs font-medium leading-relaxed">
                       Pareto efficiency means no other route is strictly better across all objectives. The recommended route is chosen via your specific weights.
                     </AlertDescription>
                   </Alert>
@@ -232,11 +240,11 @@ export default function EvaluatePage() {
 
         <div className="lg:col-span-2 space-y-6">
           {!result && !optimizing && (
-            <Card className="h-full border-dashed bg-gray-50 flex items-center justify-center min-h-[400px]">
-              <div className="text-center text-gray-500 max-w-md p-6">
-                <Activity className="h-12 w-12 mx-auto mb-4 text-gray-300" />
-                <h3 className="text-lg font-medium text-gray-700 mb-2">Ready to Evaluate</h3>
-                <p className="text-sm">Configure your optimization weights on the left and click &quot;Evaluate Routes&quot; to run the deterministic optimization engine.</p>
+            <Card className="h-full border-dashed border-gray-300 bg-gray-50 flex items-center justify-center min-h-[400px]">
+              <div className="text-center text-gray-600 max-w-md p-6">
+                <Activity className="h-12 w-12 mx-auto mb-4 text-gray-400" />
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Ready to Evaluate</h3>
+                <p className="text-sm font-medium">Configure your optimization weights on the left and click &quot;Evaluate Routes&quot; to run the deterministic optimization engine.</p>
               </div>
             </Card>
           )}
@@ -249,10 +257,10 @@ export default function EvaluatePage() {
 
           {result && !optimizing && (
             <>
-              <Card className={`shadow-sm overflow-hidden border ${recommendedRoute ? 'border-green-200' : 'border-orange-200'}`}>
-                <div className={`px-6 py-4 border-b ${recommendedRoute ? 'bg-green-50 border-green-200' : 'bg-orange-50 border-orange-200'}`}>
-                  <h2 className={`text-xl font-semibold flex items-center gap-2 ${recommendedRoute ? 'text-green-900' : 'text-orange-900'}`}>
-                    {recommendedRoute ? <><CheckCircle className="h-6 w-6" /> Recommended Route</> : <><AlertTriangle className="h-6 w-6" /> No Feasible Route</>}
+              <Card className={`shadow-sm overflow-hidden border ${recommendedRoute ? 'border-emerald-300' : 'border-amber-300'}`}>
+                <div className={`px-6 py-4 border-b ${recommendedRoute ? 'bg-emerald-50 border-emerald-200' : 'bg-amber-50 border-amber-200'}`}>
+                  <h2 className={`text-xl font-bold flex items-center gap-2 ${recommendedRoute ? 'text-emerald-950' : 'text-amber-950'}`}>
+                    {recommendedRoute ? <><CheckCircle className="h-6 w-6 text-emerald-600" /> Recommended Route</> : <><AlertTriangle className="h-6 w-6 text-amber-600" /> No Feasible Route</>}
                   </h2>
                 </div>
                 <CardContent className="p-6">
@@ -260,42 +268,42 @@ export default function EvaluatePage() {
                     <div className="space-y-4">
                       <div className="flex justify-between items-start">
                         <div>
-                          <h3 className="text-2xl font-bold">{recommendedRoute.route_name}</h3>
-                          <p className="text-gray-500 text-sm mt-1">{recommendedRoute.legs.length} legs &bull; Total Score: {(result.route_scores[recommendedRoute.id] * 100).toFixed(1)}/100</p>
+                          <h3 className="text-2xl font-extrabold text-gray-900">{recommendedRoute.route_name}</h3>
+                          <p className="text-gray-600 font-medium text-sm mt-1">{recommendedRoute.legs.length} legs &bull; Total Score: {(result.route_scores[recommendedRoute.id] * 100).toFixed(1)}/100</p>
                         </div>
-                        <Badge variant="default" className="bg-green-600">Optimal</Badge>
+                        <Badge variant="default" className="bg-emerald-600 font-bold px-3 py-1 text-xs">Optimal</Badge>
                       </div>
                       
-                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 py-4 border-y">
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 py-4 border-y border-gray-100">
                         <div>
-                          <p className="text-sm text-gray-500 font-medium">Cost</p>
-                          <p className="font-semibold text-lg">${recommendedRoute.total_cost.toLocaleString()}</p>
+                          <p className="text-xs text-gray-600 font-bold uppercase tracking-wider">Cost</p>
+                          <p className="font-extrabold text-xl text-gray-900 mt-1">${recommendedRoute.total_cost.toLocaleString()}</p>
                         </div>
                         <div>
-                          <p className="text-sm text-gray-500 font-medium">Transit Time</p>
-                          <p className="font-semibold text-lg">{recommendedRoute.transit_time} hrs</p>
+                          <p className="text-xs text-gray-600 font-bold uppercase tracking-wider">Transit Time</p>
+                          <p className="font-extrabold text-xl text-gray-900 mt-1">{recommendedRoute.transit_time} hrs</p>
                         </div>
                         <div>
-                          <p className="text-sm text-gray-500 font-medium">Reliability</p>
-                          <p className="font-semibold text-lg">{(recommendedRoute.reliability * 100).toFixed(1)}%</p>
+                          <p className="text-xs text-gray-600 font-bold uppercase tracking-wider">Reliability</p>
+                          <p className="font-extrabold text-xl text-gray-900 mt-1">{(recommendedRoute.reliability * 100).toFixed(1)}%</p>
                         </div>
                         <div>
-                          <p className="text-sm text-gray-500 font-medium">Risk Score</p>
-                          <p className="font-semibold text-lg">{(recommendedRoute.aggregate_risk * 10).toFixed(1)} / 10</p>
+                          <p className="text-xs text-gray-600 font-bold uppercase tracking-wider">Risk Score</p>
+                          <p className="font-extrabold text-xl text-gray-900 mt-1">{(recommendedRoute.aggregate_risk * 10).toFixed(1)} / 10</p>
                         </div>
                       </div>
                     </div>
                   ) : (
-                    <p className="text-gray-600">All candidate routes violate one or more hard constraints. Please review the comparison table for details on constraint violations.</p>
+                    <p className="text-gray-700 font-medium">All candidate routes violate one or more hard constraints. Please review the comparison table for details on constraint violations.</p>
                   )}
                 </CardContent>
               </Card>
 
               <Card>
-                <CardHeader className="bg-gray-50 border-b py-3">
+                <CardHeader className="bg-gray-50 border-b border-gray-200 py-3">
                   <div className="flex items-center gap-2">
                     <Info className="h-5 w-5 text-blue-600" />
-                    <CardTitle className="text-lg">Why this route?</CardTitle>
+                    <CardTitle className="text-lg font-bold text-gray-900">Why this route?</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent className="p-4">
@@ -309,24 +317,24 @@ export default function EvaluatePage() {
                     </div>
                   ) : explanation ? (
                     <div className="space-y-2">
-                      <p className="text-gray-700 text-sm leading-relaxed">{explanation.text}</p>
-                      <div className="text-[10px] text-gray-400 font-mono mt-2 flex justify-end">
-                        Explanation generated by: {explanation.type}
+                      <p className="text-gray-900 text-sm leading-relaxed font-medium">{explanation.text}</p>
+                      <div className="text-[11px] text-gray-500 font-mono mt-2 flex justify-end">
+                        Explanation engine: <span className="font-bold ml-1 text-gray-700 uppercase">{explanation.type}</span>
                       </div>
                     </div>
                   ) : (
-                    <p className="text-gray-500 text-sm">Explanation currently unavailable.</p>
+                    <p className="text-gray-600 text-sm">Explanation currently unavailable.</p>
                   )}
                 </CardContent>
               </Card>
 
               <Card>
-                <CardHeader>
-                  <CardTitle>Route Comparison</CardTitle>
+                <CardHeader className="border-b border-gray-100 pb-3">
+                  <CardTitle className="text-lg font-bold text-gray-900">Route Comparison</CardTitle>
                 </CardHeader>
-                <CardContent className="overflow-x-auto">
+                <CardContent className="overflow-x-auto pt-3">
                   <table className="w-full text-sm text-left">
-                    <thead className="text-xs text-gray-700 uppercase bg-gray-50 border-b">
+                    <thead className="text-xs text-gray-900 font-bold uppercase bg-gray-100 border-b border-gray-200">
                       <tr>
                         <th className="px-4 py-3">Route</th>
                         <th className="px-4 py-3">Status</th>
@@ -338,7 +346,7 @@ export default function EvaluatePage() {
                         <th className="px-4 py-3 min-w-[150px]">Breakdown (C/T/Rel/Rsk)</th>
                       </tr>
                     </thead>
-                    <tbody className="divide-y">
+                    <tbody className="divide-y divide-gray-200">
                       {routes.map((route) => {
                         const isFeasible = result.feasible_routes.includes(route.id);
                         const isRecommended = result.recommended_route_id === route.id;
@@ -348,40 +356,40 @@ export default function EvaluatePage() {
 
                         return (
                           <React.Fragment key={route.id}>
-                            <tr className={isRecommended ? "bg-green-50/50" : ""}>
-                              <td className="px-4 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            <tr className={isRecommended ? "bg-emerald-50/60 font-semibold" : ""}>
+                              <td className="px-4 py-4 font-bold text-gray-900 whitespace-nowrap">
                                 <div className="flex items-center gap-2">
-                                  <button onClick={() => setExpandedRouteId(expandedRouteId === route.id ? null : route.id)} className="p-1 hover:bg-gray-200 rounded" aria-label="Toggle Route Legs">
+                                  <button onClick={() => setExpandedRouteId(expandedRouteId === route.id ? null : route.id)} className="p-1 hover:bg-gray-200 rounded text-gray-600" aria-label="Toggle Route Legs">
                                     {expandedRouteId === route.id ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
                                   </button>
                                   <span>{route.route_name}</span>
-                                  {isRecommended && <Badge className="bg-green-600 text-[10px] px-1.5 py-0">Rec</Badge>}
+                                  {isRecommended && <Badge className="bg-emerald-600 font-bold text-[10px] px-1.5 py-0">Rec</Badge>}
                                 </div>
                               </td>
                               <td className="px-4 py-4">
                                 {isFeasible ? (
-                                  <Badge variant="outline" className="border-green-500 text-green-700">Feasible</Badge>
+                                  <Badge variant="outline" className="border-emerald-500 text-emerald-800 bg-emerald-50 font-bold">Feasible</Badge>
                                 ) : (
                                   <div className="space-y-1">
-                                    <Badge variant="destructive">Infeasible</Badge>
-                                    {violations.map((v, i) => <p key={i} className="text-xs text-red-600 max-w-[150px] truncate" title={v}>{v}</p>)}
+                                    <Badge variant="destructive" className="font-bold">Infeasible</Badge>
+                                    {violations.map((v, i) => <p key={i} className="text-xs text-red-600 font-semibold max-w-[150px] truncate" title={v}>{v}</p>)}
                                   </div>
                                 )}
                               </td>
-                              <td className="px-4 py-4 font-semibold">
+                              <td className="px-4 py-4 font-bold text-gray-900">
                                 {score !== undefined ? (score * 100).toFixed(1) : "-"}
                               </td>
-                              <td className="px-4 py-4">${route.total_cost.toLocaleString()}</td>
-                              <td className="px-4 py-4">{route.transit_time}h</td>
-                              <td className="px-4 py-4">{(route.reliability * 100).toFixed(1)}%</td>
-                              <td className="px-4 py-4">{(route.aggregate_risk * 10).toFixed(1)}</td>
+                              <td className="px-4 py-4 font-semibold text-gray-900">${route.total_cost.toLocaleString()}</td>
+                              <td className="px-4 py-4 font-semibold text-gray-900">{route.transit_time}h</td>
+                              <td className="px-4 py-4 font-semibold text-gray-900">{(route.reliability * 100).toFixed(1)}%</td>
+                              <td className="px-4 py-4 font-semibold text-gray-900">{(route.aggregate_risk * 10).toFixed(1)}</td>
                               <td className="px-4 py-4">
                                 {breakdown ? (
-                                  <div className="w-full flex h-4 rounded overflow-hidden bg-gray-100">
-                                    <div style={{ width: (breakdown.cost || 0) * 100 + "%" }} className="bg-blue-500" title={"Cost"} />
-                                    <div style={{ width: (breakdown.time || 0) * 100 + "%" }} className="bg-orange-500" title={"Time"} />
-                                    <div style={{ width: (breakdown.reliability || 0) * 100 + "%" }} className="bg-purple-500" title={"Rel"} />
-                                    <div style={{ width: (breakdown.risk || 0) * 100 + "%" }} className="bg-red-500" title={"Risk"} />
+                                  <div className="w-full flex h-4 rounded overflow-hidden bg-gray-200">
+                                    <div style={{ width: (breakdown.cost || 0) * 100 + "%" }} className="bg-blue-600" title={"Cost"} />
+                                    <div style={{ width: (breakdown.time || 0) * 100 + "%" }} className="bg-amber-500" title={"Time"} />
+                                    <div style={{ width: (breakdown.reliability || 0) * 100 + "%" }} className="bg-purple-600" title={"Rel"} />
+                                    <div style={{ width: (breakdown.risk || 0) * 100 + "%" }} className="bg-rose-600" title={"Risk"} />
                                   </div>
                                 ) : (
                                   <span className="text-gray-400">-</span>

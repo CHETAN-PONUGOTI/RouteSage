@@ -47,16 +47,24 @@ ENABLE_LLM_EXPLANATION=true
 *(If the key is missing or disabled, the system gracefully falls back to deterministic explanations).*
 
 **Database Setup & Migrations**
-By default, the system uses a local SQLite database (`safiri.db`). Run migrations to initialize it:
+By default, the system uses a local SQLite database (`test_safiri.db`). Run migrations to initialize the schema:
 ```bash
 alembic upgrade head
 ```
+*(Optional: For PostgreSQL, run `docker-compose up -d db` and set `DATABASE_URL=postgresql://safiri:safiripassword@localhost:5432/safiri_db`).*
+
+**Seed Demo Data**
+Populate the database with the verified synthetic dataset (30 shipments, 120 candidate routes):
+```bash
+python scripts/seed_database.py
+```
+*Expected output: `Successfully seeded 30 shipments and 120 candidate routes into the database.`*
 
 **Start the API Server**
 ```bash
 uvicorn app.main:app --reload --port 8000
 ```
-API Documentation will be available at `http://localhost:8000/docs`.
+API Documentation will be available at `http://localhost:8000/docs` and Health Check at `http://localhost:8000/health`.
 
 ### 2. Frontend Setup
 ```bash
@@ -65,6 +73,11 @@ npm install
 npm run dev
 ```
 The UI will be available at `http://localhost:3000`.
+
+**Verify the Demo in Browser:**
+1. Open `http://localhost:3000/shipments` to view the 30 seeded shipments.
+2. Select any shipment to view its 4 candidate routes.
+3. Click **"Evaluate Routes"** (`/shipments/{shipmentId}/evaluate`) and click **"Run Optimization"** to view the winning recommendation, multi-attribute score breakdown, Pareto trade-off badges, and the explanation card.
 
 ---
 

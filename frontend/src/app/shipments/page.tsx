@@ -47,11 +47,11 @@ export default function ShipmentsPage() {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight">Shipments</h1>
-          <p className="text-gray-500 mt-1">Manage and track your active shipments.</p>
+          <h1 className="text-3xl font-extrabold tracking-tight text-gray-900">Shipments</h1>
+          <p className="text-gray-600 mt-1 text-sm">Manage and evaluate multi-modal logistics shipments.</p>
         </div>
         <Link href="/shipments/new">
-          <Button>
+          <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold shadow-sm">
             <Plus className="mr-2 h-4 w-4" />
             New Shipment
           </Button>
@@ -61,43 +61,61 @@ export default function ShipmentsPage() {
       {shipments.length === 0 ? (
         <EmptyState 
           title="No shipments found" 
-          description="You haven't created any shipments yet. Get started by creating a new shipment."
+          description="No active shipments found. Run the seed script or create a new shipment."
         />
       ) : (
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {shipments.map((shipment) => (
-            <Link key={shipment.id} href={`/shipments/${shipment.id}`} className="block">
-              <Card className="hover:border-blue-300 transition-colors cursor-pointer h-full">
-                <CardHeader className="pb-3">
-                  <div className="flex justify-between items-start">
-                    <CardTitle className="text-lg truncate" title={`${shipment.origin} to ${shipment.destination}`}>
+            <div key={shipment.id} className="block">
+              <Card className="hover:border-blue-400 hover:shadow-md transition-all h-full flex flex-col justify-between">
+                <CardHeader className="pb-3 border-b border-gray-100">
+                  <div className="flex justify-between items-start gap-2">
+                    <CardTitle className="text-base font-bold text-gray-900 truncate" title={`${shipment.origin} to ${shipment.destination}`}>
                       {shipment.origin} → {shipment.destination}
                     </CardTitle>
-                    <Badge variant="secondary" className="text-[10px]">
+                    <Badge 
+                      variant={shipment.priority === "URGENT" ? "destructive" : "secondary"} 
+                      className="text-[10px] font-bold uppercase tracking-wider shrink-0"
+                    >
                       {shipment.priority}
                     </Badge>
                   </div>
                 </CardHeader>
-                <CardContent>
-                  <div className="text-sm text-gray-500 space-y-1">
+                <CardContent className="pt-3 flex-1 flex flex-col justify-between">
+                  <div className="text-xs text-gray-600 space-y-1.5 mb-4">
                     <div className="flex justify-between">
-                      <span>Cargo Type:</span>
-                      <span className="font-medium text-gray-900">{shipment.cargo_type}</span>
+                      <span className="font-medium text-gray-500">Cargo Type:</span>
+                      <span className="font-semibold text-gray-900">{shipment.cargo_type}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Weight:</span>
-                      <span className="font-medium text-gray-900">{shipment.weight} kg</span>
+                      <span className="font-medium text-gray-500">Weight:</span>
+                      <span className="font-semibold text-gray-900">{shipment.weight != null ? shipment.weight.toLocaleString() : 0} kg</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Deadline:</span>
-                      <span className="font-medium text-gray-900">
-                        {new Date(shipment.delivery_deadline).toLocaleDateString()}
-                      </span>
+                      <span className="font-medium text-gray-500">Value:</span>
+                      <span className="font-semibold text-gray-900">${shipment.shipment_value != null ? shipment.shipment_value.toLocaleString() : "0"}</span>
                     </div>
+                    <div className="flex justify-between">
+                      <span className="font-medium text-gray-500">Deadline:</span>
+                      <span className="font-semibold text-gray-900">{shipment.delivery_deadline ? new Date(shipment.delivery_deadline).toLocaleDateString() : "-"}</span>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-2 pt-2 border-t border-gray-100">
+                    <Link href={`/shipments/${shipment.id}`} className="flex-1">
+                      <Button variant="outline" size="sm" className="w-full text-xs font-semibold text-gray-700 hover:text-gray-900 border-gray-300">
+                        Details
+                      </Button>
+                    </Link>
+                    <Link href={`/shipments/${shipment.id}/evaluate`} className="flex-1">
+                      <Button size="sm" className="w-full text-xs font-semibold bg-blue-600 hover:bg-blue-700 text-white shadow-sm">
+                        Evaluate
+                      </Button>
+                    </Link>
                   </div>
                 </CardContent>
               </Card>
-            </Link>
+            </div>
           ))}
         </div>
       )}

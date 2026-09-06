@@ -20,4 +20,8 @@ export const apiService = {
     apiClient.get<OptimizationResult>(`/api/v1/optimization-runs/${runId}`),
   getExplanation: (runId: string) =>
     apiClient.post<{ explanation: string; generated_by: string; run_id: string }>(`/api/v1/optimization-runs/${runId}/explanation`, {}),
+
+  // System
+  checkHealth: () => apiClient.get<{ status: string }>('/health'),
 };
+
