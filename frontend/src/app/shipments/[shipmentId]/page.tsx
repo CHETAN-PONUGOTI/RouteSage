@@ -136,9 +136,11 @@ export default function ShipmentDetailPage() {
                 </div>
 
                 {/* Phase 12 CTA */}
-                <Button className="w-full" size="lg" disabled>
-                  Evaluate Routes (Coming Soon)
-                </Button>
+                <Link href={`/shipments/${shipmentId}/evaluate`}>
+                  <Button className="w-full" size="lg">
+                    Evaluate Routes
+                  </Button>
+                </Link>
               </div>
             ) : (
               <div className="space-y-4">

@@ -16,5 +16,8 @@ export const apiService = {
   // Optimization
   runOptimization: (shipmentId: string, profile: OptimizationProfile) => 
     apiClient.post<OptimizationResult>(`/api/v1/shipments/${shipmentId}/optimize`, { profile }),
-  getOptimizationRun: (runId: string) => apiClient.get<OptimizationResult>(`/api/v1/optimization-runs/${runId}`)
+  getOptimizationRun: (runId: string) => 
+    apiClient.get<OptimizationResult>(`/api/v1/optimization-runs/${runId}`),
+  getExplanation: (runId: string) =>
+    apiClient.post<{ explanation: string; generated_by: string; run_id: string }>(`/api/v1/optimization-runs/${runId}/explanation`, {}),
 };
