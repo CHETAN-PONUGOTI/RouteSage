@@ -32,6 +32,9 @@ def generate_pdf():
     # Page 2: 5. Multi-Objective Scoring, 6. Pareto Analysis, 7. Sensitivity Analysis, 8. Explanation Architecture, 9. Dataset
     # Page 3: 10. Evaluation Methodology, 11. Evaluation Results, 12. Testing and Reliability, 13. Limitations and Future Work, 14. Conclusion
 
+    # Remove raw markdown footer line if present
+    content = re.sub(r"\n+---\n+\*.*Technical Report.*?\*\n*$", "", content.strip())
+
     # Markdown formatting
     html_body = content
     html_body = re.sub(r"^### (.*?)$", r"<h3>\1</h3>", html_body, flags=re.MULTILINE)
@@ -78,15 +81,15 @@ def generate_pdf():
     # Insert page breaks before section 5 and section 10
     html_body = html_body.replace(
         "<h3>5. Multi-Objective Scoring</h3>",
-        "<div class='page-break'></div><div class='page-footer'>Safiri Route Intelligence — Technical Report | Page 1 of 3</div><h3>5. Multi-Objective Scoring</h3>"
+        "<div class='page-footer'>RouteStage — Technical Report | Page 1 of 3</div><div class='page-break'></div><h3>5. Multi-Objective Scoring</h3>"
     )
     html_body = html_body.replace(
         "<h3>10. Evaluation Methodology</h3>",
-        "<div class='page-break'></div><div class='page-footer'>Safiri Route Intelligence — Technical Report | Page 2 of 3</div><h3>10. Evaluation Methodology</h3>"
+        "<div class='page-footer'>RouteStage — Technical Report | Page 2 of 3</div><div class='page-break'></div><h3>10. Evaluation Methodology</h3>"
     )
 
     # Append footer for page 3
-    html_body += "<div class='page-footer'>Safiri Route Intelligence — Technical Report | Page 3 of 3</div>"
+    html_body += "<div class='page-footer'>RouteStage — Technical Report | Page 3 of 3</div>"
 
     style = """
     @page {
@@ -180,7 +183,7 @@ def generate_pdf():
     }
     """
 
-    full_html = f"<!DOCTYPE html><html><head><meta charset='utf-8'><title>Safiri Route Intelligence</title><style>{style}</style></head><body>{html_body}</body></html>"
+    full_html = f"<!DOCTYPE html><html><head><meta charset='utf-8'><title>RouteStage</title><style>{style}</style></head><body>{html_body}</body></html>"
     html_path.write_text(full_html, encoding="utf-8")
 
     edge_exe = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"

@@ -1,4 +1,4 @@
-# Safiri Route Intelligence
+# RouteStage
 ## Technical Report — Optimizing Shipment Routes Under Cost, Time, Reliability, and Risk Constraints
 
 ---
@@ -7,7 +7,7 @@
 
 Logistics planners must balance conflicting priorities—minimizing cost and transit time while maximizing reliability and mitigating cargo risk. Conventional route selection tools either rely on static heuristic rules or obscure decision logic behind unexplainable "black-box" predictions.
 
-**Safiri Route Intelligence** is an explainable, multi-objective decision-support platform designed to evaluate routing candidates, recommend optimal paths tailored to user-defined operational trade-offs, and generate verifiable natural-language explanations. The platform is governed by a core architectural principle: **"The optimizer decides. The LLM explains."** All constraint evaluations, metric normalizations, utility scoring, ranking, Pareto trade-off identification, and sensitivity analyses are performed by a strictly deterministic mathematical engine. Google Gemini (via the official `google-genai` SDK) serves purely as an explanation and presentation layer, converting structured mathematical evidence into natural language under strict schema constraints and grounding validation.
+**RouteStage** is an explainable, multi-objective decision-support platform designed to evaluate routing candidates, recommend optimal paths tailored to user-defined operational trade-offs, and generate verifiable natural-language explanations. The platform is governed by a core architectural principle: **"The optimizer decides. The LLM explains."** All constraint evaluations, metric normalizations, utility scoring, ranking, Pareto trade-off identification, and sensitivity analyses are performed by a strictly deterministic mathematical engine. Google Gemini (via the official `google-genai` SDK) serves purely as an explanation and presentation layer, converting structured mathematical evidence into natural language under strict schema constraints and grounding validation.
 
 ---
 
@@ -151,7 +151,7 @@ The evaluation script produced the following verified metrics across the synthet
 ### 12. Testing and Reliability
 
 Full-stack automated verification confirms systemic stability:
-- **Backend Test Suite (`pytest`):** **78 / 78 tests passed** covering constraints, normalization, scoring, tie-breaking, Pareto sorting, sensitivity, persistence, grounding, and fallbacks.
+- **Backend Test Suite (`pytest`):** **81 / 81 tests passed** covering constraints, normalization, scoring, tie-breaking, Pareto sorting, sensitivity, persistence, grounding, and fallbacks.
 - **Frontend Test Suite (`Jest`):** **18 / 18 tests passed** covering shipment workflows, route evaluation UI, and route-leg rendering.
 - **Type Checking & Linting:** `npx tsc --noEmit` passed with **0 errors**; Next.js ESLint passed with **0 errors / 0 warnings**.
 - **Production Build:** Next.js 14 compiled and generated all static/dynamic routes successfully.
@@ -170,7 +170,7 @@ Full-stack automated verification confirms systemic stability:
 
 ### 14. Conclusion
 
-Safiri Route Intelligence demonstrates an effective, responsible architecture for logistics decision support. By strictly separating deterministic optimization from generative explanation, the platform delivers mathematically sound, repeatable route recommendations while providing operators with clear, grounded visibility into operational trade-offs.
+RouteStage demonstrates an effective, responsible architecture for logistics decision support. By strictly separating deterministic optimization from generative explanation, the platform delivers mathematically sound, repeatable route recommendations while providing operators with clear, grounded visibility into operational trade-offs.
 
 ---
-*Safiri Route Intelligence — Technical Report | September 2026*
+*RouteStage — Technical Report | September 2026*
