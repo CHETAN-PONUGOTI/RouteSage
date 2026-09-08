@@ -41,7 +41,7 @@ class Route(BaseModel):
 
     feasibility_status: FeasibilityStatus = Field(default=FeasibilityStatus.PENDING)
     violated_constraints: list[str] = Field(default_factory=list)
-    legs: list[RouteLeg] = Field(..., min_length=1)
+    legs: list[RouteLeg] = Field(default_factory=list)
 
     model_config = ConfigDict(frozen=True)
 

@@ -36,3 +36,11 @@ def create_routes(shipment_id: UUID, data: list[RouteCreate], service: Optimizat
 @router.get("/{shipment_id}/routes", response_model=list[RouteResponse])
 def get_routes(shipment_id: UUID, service: OptimizationService = Depends(get_optimization_service)):
     return service.get_routes(shipment_id)
+
+@router.put("/{shipment_id}/routes/{route_id}", response_model=RouteResponse)
+def update_route(shipment_id: UUID, route_id: UUID, data: RouteCreate, service: OptimizationService = Depends(get_optimization_service)):
+    return service.update_route(shipment_id, route_id, data)
+
+@router.delete("/{shipment_id}/routes/{route_id}", status_code=204)
+def delete_route(shipment_id: UUID, route_id: UUID, service: OptimizationService = Depends(get_optimization_service)):
+    service.delete_route(shipment_id, route_id)

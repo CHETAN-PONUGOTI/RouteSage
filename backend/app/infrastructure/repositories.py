@@ -45,6 +45,24 @@ class RouteRepository:
             self.session.merge(model)
         self.session.commit()
 
+
+    def save(self, route: Route) -> None:
+        model = DataMapper.to_orm_route(route)
+        self.session.merge(model)
+        self.session.commit()
+
+    def get(self, route_id: UUID) -> Route | None:
+        model = self.session.query(RouteModel).filter(RouteModel.id == route_id).first()
+        if not model:
+            return None
+        return DataMapper.to_domain_route(model)
+
+    def delete(self, route_id: UUID) -> None:
+        model = self.session.query(RouteModel).filter(RouteModel.id == route_id).first()
+        if model:
+            self.session.delete(model)
+            self.session.commit()
+
     def get_by_shipment(self, shipment_id: UUID) -> list[Route]:
         models = (
             self.session.query(RouteModel)

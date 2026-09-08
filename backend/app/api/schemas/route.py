@@ -34,7 +34,7 @@ class RouteCreate(BaseModel):
     aggregate_risk: float
     feasibility_status: FeasibilityStatus = FeasibilityStatus.PENDING
     violated_constraints: list[str] = []
-    legs: list[RouteLegCreate]
+    legs: list[RouteLegCreate] = []
 
 class RouteResponse(RouteCreate):
     id: UUID
