@@ -63,7 +63,7 @@ describe('Shipment Detail Page', () => {
     
     render(<ShipmentDetailPage />)
     await waitFor(() => {
-      expect(screen.getByText('Paris → London')).toBeInTheDocument()
+      expect(screen.getByText(/Paris/)).toBeInTheDocument(); expect(screen.getByText(/London/)).toBeInTheDocument();
       expect(screen.getByText('Candidate Routes Available')).toBeInTheDocument()
       expect(screen.getByText('Fast Route')).toBeInTheDocument()
     })

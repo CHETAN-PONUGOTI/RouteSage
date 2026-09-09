@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, Package, Clock, Scale, DollarSign, Activity } from "lucide-react";
+import { ArrowLeft, Package, Clock, Scale, DollarSign, Activity, Plus, Edit2, Trash2 } from "lucide-react";
 import { apiService } from "../../../services/api";
 import { Shipment, Route } from "../../../types/api";
 import { Button } from "../../../components/ui/button";
@@ -43,6 +43,17 @@ export default function ShipmentDetailPage() {
       setLoading(false);
     }
   }, [shipmentId]);
+
+
+  const handleDeleteRoute = async (routeId: string) => {
+    if (!confirm("Are you sure you want to delete this route?")) return;
+    try {
+      await apiService.deleteRoute(shipmentId, routeId);
+      setRoutes(routes.filter(r => r.id !== routeId));
+    } catch (err: any) {
+      alert(err.message || "Failed to delete route");
+    }
+  };
 
   useEffect(() => {
     if (shipmentId) {
@@ -112,8 +123,13 @@ export default function ShipmentDetailPage() {
         </Card>
 
         <Card>
-          <CardHeader className="border-b border-gray-100 pb-3">
+          <CardHeader className="border-b border-gray-100 pb-3 flex flex-row items-center justify-between">
             <CardTitle className="text-lg font-bold text-gray-900">Route Availability</CardTitle>
+            <Link href={`/shipments/${shipmentId}/routes/new`}>
+              <Button size="sm" variant="outline" className="h-8 border-dashed bg-gray-50 hover:bg-gray-100 font-semibold text-gray-700">
+                <Plus className="h-4 w-4 mr-1" /> Add Route
+              </Button>
+            </Link>
           </CardHeader>
           <CardContent className="pt-4">
             {routes.length > 0 ? (
@@ -130,8 +146,20 @@ export default function ShipmentDetailPage() {
                   <ul className="text-sm space-y-1.5">
                     {routes.map((r) => (
                       <li key={r.id} className="flex justify-between items-center bg-gray-50 border border-gray-200 px-3 py-2 rounded text-gray-900 font-medium">
-                        <span className="truncate mr-4 text-gray-900">{r.route_name}</span>
-                        <span className="font-mono text-xs text-gray-600 bg-white border border-gray-200 px-1.5 py-0.5 rounded">{r.legs.length} leg(s)</span>
+                        <div className="flex-1 truncate mr-4">
+                          <span className="text-gray-900">{r.route_name}</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span className="font-mono text-xs text-gray-600 bg-white border border-gray-200 px-1.5 py-0.5 rounded">{r.legs?.length || 0} leg(s)</span>
+                          <Link href={`/shipments/${shipmentId}/routes/${r.id}`}>
+                            <Button variant="ghost" size="icon" className="h-6 w-6 text-gray-500 hover:text-blue-600">
+                              <Edit2 className="h-3 w-3" />
+                            </Button>
+                          </Link>
+                          <Button variant="ghost" size="icon" className="h-6 w-6 text-gray-500 hover:text-red-600" onClick={() => handleDeleteRoute(r.id)}>
+                            <Trash2 className="h-3 w-3" />
+                          </Button>
+                        </div>
                       </li>
                     ))}
                   </ul>
@@ -150,8 +178,13 @@ export default function ShipmentDetailPage() {
                     No candidate routes have been generated for this shipment yet.
                   </AlertDescription>
                 </Alert>
-                <div className="text-sm text-gray-500 text-center py-4 border border-dashed rounded bg-gray-50">
-                  <p>Route generation integration is pending.</p>
+                <div className="text-center py-6 border border-dashed border-gray-300 rounded bg-gray-50">
+                  <p className="text-sm text-gray-500 mb-4 font-medium">Create the first candidate route manually.</p>
+                  <Link href={`/shipments/${shipmentId}/routes/new`}>
+                    <Button variant="outline" className="bg-white">
+                      <Plus className="h-4 w-4 mr-2" /> Add Candidate Route
+                    </Button>
+                  </Link>
                 </div>
               </div>
             )}
